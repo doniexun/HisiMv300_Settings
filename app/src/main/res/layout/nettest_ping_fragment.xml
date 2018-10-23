@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/nettest_logo" />
+        <Button
+            android:id="@+id/button_start_ping"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/submit_selector"
+            android:text="开始Ping测试"
+            android:textColor="#ffe1e1e1"
+            android:textSize="21dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_ping_address"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable="@drawable/edit_cursor"
+            android:singleLine="true"
+            android:background="@drawable/edit_selector"
+            android:hint="@string/network_host_address"
+            android:textColor="#ffe1e1e1"
+            android:textSize="25sp"
+            android:nextFocusUp="@+id/title_button_ping"/>
+
+        <TextView
+            android:id="@+id/ping_result"
+            android:layout_width="750dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffe1e1e1"
+            android:textSize="21sp" />
+
+        <LinearLayout
+            android:layout_width="750dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/display_box_background">
+
+            <TextView
+                android:id="@+id/ping_line"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffe1e1e1"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

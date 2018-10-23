@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="850dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/display_box_background"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="@string/version"
+                android:textColor="#FFFFFF"
+                android:textSize="24dp" />
+
+            <TextView
+                style="@style/systemInfoFontStyle"
+                android:layout_marginLeft="10dp"
+                android:text="@string/colon" />
+
+            <TextView
+                android:id="@+id/textViewModel"
+                style="@style/systemInfoFontStyle"
+                android:layout_marginLeft="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="@string/manufacturer"
+                android:textColor="#FFFFFF"
+                android:textSize="24dp" />
+
+            <TextView
+                style="@style/systemInfoFontStyle"
+                android:layout_marginLeft="10dp"
+                android:text="@string/colon" />
+
+            <TextView
+                android:id="@+id/manufacturer"
+                style="@style/systemInfoFontStyle"
+                android:layout_marginLeft="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="@string/cpu_info"
+                android:textColor="#FFFFFF"
+                android:textSize="24dp" />
+
+            <TextView
+                style="@style/systemInfoFontStyle"
+                android:layout_marginLeft="10dp"
+                android:text="@string/colon" />
+
+            <TextView
+                android:id="@+id/cpu"
+                style="@style/systemInfoFontStyle"
+                android:layout_marginLeft="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="@string/ram_info"
+                android:textColor="#FFFFFF"
+                android:textSize="24dp" />
+
+            <TextView
+                style="@style/systemInfoFontStyle"
+                android:layout_marginLeft="10dp"
+                android:text="@string/colon" />
+
+            <TextView
+                android:id="@+id/ram"
+                style="@style/systemInfoFontStyle"
+                android:layout_marginLeft="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="@string/flash_info"
+                android:textColor="#FFFFFF"
+                android:textSize="24dp" />
+
+            <TextView
+                style="@style/systemInfoFontStyle"
+                android:layout_marginLeft="10dp"
+                android:text="@string/colon" />
+
+            <TextView
+                android:id="@+id/flash"
+                style="@style/systemInfoFontStyle"
+                android:layout_marginLeft="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="@string/system_softver"
+                android:textColor="#FFFFFF"
+                android:textSize="24dp" />
+
+            <TextView
+                style="@style/systemInfoFontStyle"
+                android:layout_marginLeft="10dp"
+                android:text="@string/colon" />
+
+            <TextView
+                android:id="@+id/swVer"
+                style="@style/systemInfoFontStyle"
+                android:layout_marginLeft="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="@string/system_hardver"
+                android:textColor="#FFFFFF"
+                android:textSize="24dp" />
+
+            <TextView
+                style="@style/systemInfoFontStyle"
+                android:layout_marginLeft="10dp"
+                android:text="@string/colon" />
+
+            <TextView
+                android:id="@+id/hwVer"
+                style="@style/systemInfoFontStyle"
+                android:layout_marginLeft="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="@string/system_android_version"
+                android:textColor="#FFFFFF"
+                android:textSize="24dp" />
+
+            <TextView
+                style="@style/systemInfoFontStyle"
+                android:layout_marginLeft="10dp"
+                android:text="@string/colon" />
+
+            <TextView
+                android:id="@+id/androidVer"
+                style="@style/systemInfoFontStyle"
+                android:layout_marginLeft="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="@string/mac"
+                android:textColor="#FFFFFF"
+                android:textSize="24dp" />
+
+            <TextView
+                style="@style/systemInfoFontStyle"
+                android:layout_marginLeft="10dp"
+                android:text="@string/colon" />
+
+            <TextView
+                android:id="@+id/textViewMac"
+                style="@style/systemInfoFontStyle"
+                android:layout_marginLeft="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="@string/wifi_mac"
+                android:textColor="#FFFFFF"
+                android:textSize="24dp" />
+
+            <TextView
+                style="@style/systemInfoFontStyle"
+                android:layout_marginLeft="10dp"
+                android:text="@string/colon" />
+
+            <TextView
+                android:id="@+id/textViewWIFImac"
+                style="@style/systemInfoFontStyle"
+                android:layout_marginLeft="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="@string/stbId"
+                android:textColor="#FFFFFF"
+                android:textSize="24dp" />
+
+            <TextView
+                style="@style/systemInfoFontStyle"
+                android:layout_marginLeft="10dp"
+                android:text="@string/colon" />
+
+            <TextView
+                android:id="@+id/stbid"
+                android:singleLine="true"
+                style="@style/systemInfoFontStyle"
+                android:layout_marginLeft="25dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

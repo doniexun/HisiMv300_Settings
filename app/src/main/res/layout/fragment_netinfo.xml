@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="380dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/display_box_background"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/systemInfoFontStyle"
+                android:text="@string/net_mode_title" />
+
+            <TextView
+                style="@style/systemInfoFontStyle"
+                android:layout_marginLeft="5dp"
+                android:text="@string/colon" />
+
+            <TextView
+                android:id="@+id/net_mode"
+                style="@style/systemInfoFontStyle"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/systemInfoFontStyle"
+                android:layout_width="140dp"
+                android:text="@string/ip_title" />
+
+            <TextView
+                style="@style/systemInfoFontStyle"
+                android:layout_marginLeft="5dp"
+                android:text="@string/colon" />
+
+            <TextView
+                android:id="@+id/ip_address"
+                style="@style/systemInfoFontStyle"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="493dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/systemInfoFontStyle"
+                android:layout_width="140dp"
+                android:text="@string/mask_title" />
+
+            <TextView
+                style="@style/systemInfoFontStyle"
+                android:layout_marginLeft="5dp"
+                android:text="@string/colon" />
+
+            <TextView
+                android:id="@+id/mask_address"
+                style="@style/systemInfoFontStyle"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/systemInfoFontStyle"
+                android:layout_width="140dp"
+                android:text="@string/gateway_title" />
+
+            <TextView
+                style="@style/systemInfoFontStyle"
+                android:layout_marginLeft="5dp"
+                android:text="@string/colon" />
+
+            <TextView
+                android:id="@+id/gateway_address"
+                style="@style/systemInfoFontStyle"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/systemInfoFontStyle"
+                android:layout_width="140dp"
+                android:text="@string/dns_title" />
+
+            <TextView
+                style="@style/systemInfoFontStyle"
+                android:layout_marginLeft="5dp"
+                android:text="@string/colon" />
+
+            <TextView
+                android:id="@+id/dns_address"
+                style="@style/systemInfoFontStyle"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

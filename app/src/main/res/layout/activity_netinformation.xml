@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="40dp" >
+		<ImageView
+		    android:layout_width="20dp"
+		    android:layout_height="25dp"
+		    android:contentDescription="@string/app_name"
+		    android:scaleType="fitCenter"
+		    android:src="@drawable/back"
+		    android:layout_gravity="center_vertical" 
+		    android:layout_marginRight="10dp"/>
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/networkinfo_settings"
+            android:textColor="#ffe1e1e1"
+            android:textSize="30sp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/netinformation"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="50dp"
+            android:text="@string/networkinfo_settings"
+            style="?title_button"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="1000dp"
+        android:layout_height="3dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_horizontal"
+        android:textColor="#565656" 
+        android:focusable="false"/>
+    
+    <FrameLayout
+        android:id="@+id/netinformation_frameLayout"
+        android:layout_width="980dp"
+        android:layout_height="520dp"
+        android:layout_gravity="center">
+    </FrameLayout>
+</LinearLayout>

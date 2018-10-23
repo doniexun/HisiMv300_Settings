@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.android.settings"
+    android:sharedUserId="android.uid.system">
+
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" />
+    <uses-permission android:name="android.permission.RECOVERY" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECOVERY" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme_Cool"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity android:name=".Settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="changhong.android.settings.SETTINGS" />
+                <action android:name="android.settings.SETTINGS" />
+                <action android:name="bestv.ott.action.setting.sys" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".iptv.lan.LanSettingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.Settings.EtherNet" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".iptv.wifi.WifiActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.Settings.Wifi" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".iptv.bluetooth.BlueToothActivity"/>
+
+        <activity android:name=".iptv.nettest.NetTestSettingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.Settings.Nettest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".iptv.nettest.NetDiagnosisActivity" />
+
+        <activity android:name=".iptv.nettest.NetSpeedActivity" />
+
+        <activity android:name=".iptv.nettest.NetPingActivity" />
+
+        <activity android:name=".iptv.itv.ItvSettingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.Settings.itv" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".iptv.sysinfo.SystemInfoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.Settings.SystemInfo" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".iptv.display.DisplaySettingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.Settings.Display" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".iptv.display.ScaleAndMoveActivity" />
+        <activity android:name=".iptv.other.OtherSettings">
+            <intent-filter>
+                <action android:name="android.intent.action.Settings.Other" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".iptv.netinfo.NetInfoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.Settings.NetInfo" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <service android:name="com.android.settings.service.NetConnectService">
+            <intent-filter>
+                <action android:name="com.android.settings.service.NetConnectService" />
+            </intent-filter>
+        </service>
+        <service android:name="com.android.settings.service.NetIpService">
+            <intent-filter>
+                <action android:name="com.android.settings.service.NetIpService" />
+            </intent-filter>
+        </service>
+
+        <service android:name="com.android.settings.service.NetGatewayService">
+            <intent-filter>
+                <action android:name="com.android.settings.service.NetGatewayService" />
+            </intent-filter>
+        </service>
+
+        <service android:name="com.android.settings.service.NetHttpService">
+            <intent-filter>
+                <action android:name="com.android.settings.service.NetHttpService" />
+            </intent-filter>
+        </service>
+
+        <service android:name="com.android.settings.service.NetNtpService">
+            <intent-filter>
+                <action android:name="com.android.settings.service.NetNtpService" />
+            </intent-filter>
+        </service>
+
+        <service android:name="com.android.settings.service.NetMulticastService">
+            <intent-filter>
+                <action android:name="com.android.settings.service.NetMulticastService" />
+            </intent-filter>
+        </service>
+        <service android:name="com.android.settings.service.NetDnsService">
+            <intent-filter>
+                <action android:name="com.android.settings.service.NetDnsService" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".receiver.KeysReceiver">
+            <intent-filter>
+                <!--PhoneWindowManager 实现的按键监听广播action 如下：-->
+                <action android:name="com.chinamobile.action.KEY_PRESS_DOWN" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".receiver.ScanStorageReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+                <action android:name="android.intent.action.MEDIA_REMOVED" />
+
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".receiver.BootComplitedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.SCREEN_OFF" />
+                <action android:name="android.intent.action.SCREEN_ON" />
+            </intent-filter>
+        </receiver>
+
+
+    </application>
+
+</manifest>

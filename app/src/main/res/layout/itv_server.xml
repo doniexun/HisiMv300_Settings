@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/itv_logo"
+        android:contentDescription="@string/action_settings" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/npt_updateserver_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <com.android.settings.iptv.util.CustomTextView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="marquee"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/itv_tms_mainserver"
+                android:textColor="#ffe1e1e1"
+                android:textSize="21sp" />
+
+            <EditText
+                android:id="@+id/et_tms_mainserver"
+                android:layout_width="450dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/edit_selector"
+                android:enabled="false"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#ffe1e1e1"
+                android:textSize="21sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="@string/itv_tms_backupserver"
+                android:textColor="#ffe1e1e1"
+                android:textSize="21sp" />
+
+            <EditText
+                android:id="@+id/et_tms_backupserver"
+                android:layout_width="450dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/edit_selector"
+                android:enabled="false"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#ffe1e1e1"
+                android:textCursorDrawable="@drawable/edit_cursor"
+                android:textSize="21sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="@string/ntpserver"
+                android:textColor="#ffe1e1e1"
+                android:textSize="21sp" />
+
+            <EditText
+                android:id="@+id/ntptimeserver"
+                android:layout_width="450dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/edit_selector"
+                android:enabled="false"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#ffe1e1e1"
+                android:textCursorDrawable="@drawable/edit_cursor"
+                android:textSize="21sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

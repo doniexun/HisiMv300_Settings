@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:contentDescription="@string/app_name"
+        android:visibility="gone"
+        android:scaleType="fitCenter"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="120dp" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="@string/net_diagnosis"
+            android:textColor="#ffe1e1e1"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="980dp"
+        android:layout_height="3dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/app_name"
+        android:gravity="center_horizontal"
+        android:textColor="#565656"
+        android:focusable="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        <FrameLayout
+            android:id="@+id/framelayout_diagnosis"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:visibility="visible"
+            android:background="@drawable/home_button_3"
+            android:layout_width="250dp"
+            android:layout_height="350dp">
+
+            <ImageView
+                android:id="@+id/imageview_diagnosis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/icon_wangluozhenduan"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="50dp"
+                android:textSize="32sp"
+                android:textColor="#ffe1e1e1"
+                android:text="@string/network_test"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/framelayout_speedtest"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:visibility="visible"
+            android:background="@drawable/home_button_5"
+            android:layout_width="250dp"
+            android:layout_height="350dp">
+            <ImageView
+                android:id="@+id/imageview_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/icon_wangluocesu"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="50dp"
+                android:textSize="32sp"
+                android:textColor="#ffe1e1e1"
+                android:text="@string/network_speed"
+                />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/framelayout_pingtest"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:visibility="visible"
+            android:background="@drawable/home_button_4"
+            android:layout_width="250dp"
+            android:layout_height="350dp">
+            <ImageView
+                android:id="@+id/imageview_ping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/icon_ping"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="50dp"
+                android:textSize="32sp"
+                android:textColor="#ffe1e1e1"
+                android:text="@string/network_ping"
+                />
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

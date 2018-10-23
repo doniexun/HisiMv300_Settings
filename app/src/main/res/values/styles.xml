@@ -1,0 +1,111 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="activity_anim" parent="android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_from_left</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_to_right</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_from_right</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_to_left</item>
+    </style>
+    
+	<style name="NoAnimation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+    
+	<style name="CH_Common_Toast">
+		<item name="android:background">@drawable/epg_prompt_bg</item>	
+	</style>
+    
+    <style name="CH_Common_Message_Text">
+		<item name="android:textColor">@color/caciColor</item>
+		<item name="android:textSize">21sp</item>
+	</style>
+	
+ 
+	<style name="Theme.ToastDialog" parent="android:style/Theme.Dialog">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowFrame">@null</item>
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:backgroundDimEnabled">false</item>
+	</style>
+    
+    <style name="vch_Notitle_Theme" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+    <item name="android:windowNoTitle">true</item>
+       <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    
+	<style name="vch_dialog_them" >
+        
+        <item name="android:windowFrame">@null</item>
+		<item name="android:windowIsFloating">true</item>
+	    <item name="android:windowNoTitle">true</item>
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:backgroundDimAmount">0</item>
+ 		<item name="android:backgroundDimEnabled">true</item>
+		<item name="android:windowAnimationStyle">@null</item>
+		<!-- <item name="android:windowAnimationStyle">@style/Animation.Push</item> -->
+	</style>
+	
+	<style name="dialog" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+	
+	<style name="title_button_default">
+	    <item name="android:textSize">25sp</item>
+        <item name="android:gravity">center</item>
+		<item name="android:background">@drawable/titlebutton_selector</item>
+		<item name="android:textColor">#ffffff</item>
+	</style>
+	
+	<style name="title_button">
+	    <item name="android:textSize">25sp</item>
+        <item name="android:gravity">center</item>
+		<item name="android:background">@drawable/button_selector</item>
+		<item name="android:textColor">#000000</item>
+	</style>
+
+    <style name="systemInfoFontStyle">
+        <item name="android:textSize">24dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="TestDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item> <!--边框-->
+        <item name="android:windowIsFloating">true</item> <!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item><!--半透明-->
+        <item name="android:background">@android:color/transparent</item><!--背景透明-->
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">true</item> <!--蒙版- 模糊 -->
+    </style>
+</resources>

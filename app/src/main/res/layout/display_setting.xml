@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cmcclogo"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/display_setting"
+            android:textColor="#ffe1e1e1"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/media_set"
+            style="?title_button"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="30dp"
+            android:visibility="gone"
+            android:text="@string/media_setting" />
+
+        <Button
+            android:id="@+id/display_media_set"
+            style="?title_button"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="30dp"
+            android:text="@string/display_media_set" />
+
+        <Button
+            android:id="@+id/display_off_set"
+            style="?title_button"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="30dp"
+            android:text="@string/display_off_set" />
+
+        <Button
+            android:id="@+id/sound_set"
+            style="?title_button"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="30dp"
+            android:text="@string/sound_setting" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="980dp"
+        android:layout_height="3dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:contentDescription="@string/app_name"
+        android:focusable="false"
+        android:textColor="#565656" />
+
+    <FrameLayout
+        android:id="@+id/display_frameLayout"
+        android:layout_width="980dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"></FrameLayout>
+</LinearLayout>

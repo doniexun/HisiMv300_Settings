@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/advance_logo"
+        android:contentDescription="@string/action_settings" />
+
+    <LinearLayout
+        android:id="@+id/more_func"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="65dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/bluetooth_button"
+            android:layout_width="600dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_selector"
+            android:drawableRight="@drawable/forward"
+            android:gravity="left|center_vertical"
+            android:nextFocusRight="@+id/advance_more"
+            android:text="@string/bluetooth_setting"
+            android:textColor="#ffe1e1e1"
+            android:textSize="23sp" />
+
+        <Button
+            android:id="@+id/usb_update"
+            android:layout_width="600dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_selector"
+            android:drawableRight="@drawable/forward"
+            android:gravity="left|center_vertical"
+            android:nextFocusRight="@+id/advance_more"
+            android:text="@string/usb_update"
+            android:textColor="#ffe1e1e1"
+            android:textSize="23sp" />
+
+        <Button
+            android:id="@+id/detectself"
+            android:layout_width="600dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_selector"
+            android:drawableRight="@drawable/forward"
+            android:gravity="left|center_vertical"
+            android:nextFocusRight="@+id/advance_more"
+            android:text="@string/mast_clear"
+            android:textColor="#ffe1e1e1"
+            android:textSize="23sp" />
+
+        <Button
+            android:id="@+id/deleteAllCache"
+            android:layout_width="600dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_selector"
+            android:drawableRight="@drawable/forward"
+            android:gravity="left|center_vertical"
+            android:nextFocusRight="@+id/advance_more"
+            android:text="@string/clear_cache"
+            android:textColor="#ffe1e1e1"
+            android:textSize="23sp" />
+        <Button
+            android:id="@+id/local_media"
+            android:layout_width="600dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_selector"
+            android:drawableRight="@drawable/forward"
+            android:gravity="left|center_vertical"
+            android:nextFocusRight="@+id/advance_more"
+            android:text="@string/local_mediaplay"
+            android:textColor="#ffe1e1e1"
+            android:textSize="23sp" />
+
+        <Button
+            android:id="@+id/applicationManager"
+            android:layout_width="600dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_selector"
+            android:drawableRight="@drawable/forward"
+            android:gravity="left|center_vertical"
+            android:nextFocusRight="@+id/advance_more"
+            android:text="@string/app_manager"
+            android:textColor="#ffe1e1e1"
+            android:textSize="23sp"
+            android:visibility="gone" />
+
+
+        <!--待机时间-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="@string/standby_time"
+                android:textColor="#ffe1e1e1"
+                android:textSize="23sp" />
+
+            <Spinner
+                android:id="@+id/timeout_spinner"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_selector"
+                android:gravity="center_vertical"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text="@string/language"
+                android:textColor="#ffe1e1e1"
+                android:textSize="23sp"
+                android:gravity="center_vertical"/>
+
+              <Spinner
+                  android:id="@+id/language_spinner"
+                  android:layout_width="200dp"
+                  android:layout_height="40dp"
+                  android:gravity="center_vertical"
+                  android:background="@drawable/button_selector"
+                  android:spinnerMode="dropdown"/>
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="@string/menuStyle"
+                android:textColor="#ffe1e1e1"
+                android:textSize="23sp" />
+
+            <Spinner
+                android:id="@+id/style_spinner"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_selector"
+                android:gravity="center_vertical"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/itv_logo"
+        android:contentDescription="@string/action_settings" />
+
+    <LinearLayout
+        android:layout_width="720dp"
+        android:layout_height="288dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="主认证地址"
+                android:textColor="#ffe1e1e1"
+                android:textSize="21sp" />
+
+            <EditText
+                android:id="@+id/itv_auth_url"
+                android:layout_width="550dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/edit_selector"
+                android:enabled="false"
+                android:gravity="center"
+                android:nextFocusDown="@+id/itv_username"
+                android:nextFocusUp="@+id/itv_account"
+                android:singleLine="true"
+                android:textColor="#ffe1e1e1"
+                android:textCursorDrawable="@drawable/edit_cursor"
+                android:textSize="21sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="备认证地址"
+                android:textColor="#ffe1e1e1"
+                android:textSize="21sp" />
+
+            <EditText
+                android:id="@+id/itv_auth_url_bk"
+                android:layout_width="550dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/edit_selector"
+                android:enabled="false"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#ffe1e1e1"
+                android:textCursorDrawable="@drawable/edit_cursor"
+                android:textSize="21sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="业务账号"
+                android:textColor="#ffe1e1e1"
+                android:textSize="21sp" />
+
+            <EditText
+                android:id="@+id/itv_username"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/edit_selector"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType="text"
+                android:labelFor="@id/itv_username"
+                android:maxLength="30"
+                android:nextFocusUp="@+id/itv_account"
+                android:singleLine="true"
+                android:textColor="#ffe1e1e1"
+                android:textCursorDrawable="@drawable/edit_cursor"
+                android:textSize="21sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="业务密码"
+                android:textColor="#ffe1e1e1"
+                android:textSize="21sp" />
+
+            <EditText
+                android:id="@+id/itv_password"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/edit_selector"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType="textPassword"
+                android:labelFor="@id/itv_username"
+                android:maxLength="30"
+                android:singleLine="true"
+                android:textColor="#ffe1e1e1"
+                android:textCursorDrawable="@drawable/edit_cursor"
+                android:textSize="21sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <CheckBox
+                android:id="@+id/itv_pass_visiable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="95dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/button_selector"
+                android:button="@null"
+                android:checked="false"
+                android:drawableLeft="@drawable/display_selector"
+                android:drawablePadding="15dp"
+                android:text="@string/pppoe_pass_visible"
+                android:textColor="#ffe1e1e1"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/huawei_itv_submit"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/submit_selector"
+                android:nextFocusLeft="@+id/itv_pass_visiable"
+                android:nextFocusRight="@+id/itv_password"
+                android:text="@string/saveConfig"
+                android:textColor="#ffe1e1e1"
+                android:textSize="21sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storeFile file('E:/Android/AndroidStudio_workspace/All_keystore/hisi_keystore/platform.keystore')
+            storePassword 'android'
+        }
+    }
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.android.settings"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "V1.18.10.23"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.config
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "HisiMV300Settings_${getTime()}.apk"
+        }
+
+    }
+
+    useLibrary 'org.apache.http.legacy'
+    productFlavors {
+    }
+}
+
+def getTime() {
+    return new Date().format("yyyyMMdd")
+}
+
+dependencies {
+    compileOnly files('libs/framework.jar')
+    compileOnly files('libs/displaymanager.jar')
+    compileOnly files('libs/HiSysManager.jar')
+    implementation files('libs/audiomanager.jar')
+    //implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+    gradle.projectsEvaluated {
+        tasks.withType(JavaCompile) {
+            options.compilerArgs << '-Xbootclasspath/p:app/libs/framework.jar'
+        }
+    }
+}
+repositories {
+    mavenCentral()
+}

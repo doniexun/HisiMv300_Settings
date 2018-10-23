@@ -1,0 +1,563 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">系统设置</string>
+    <string name="setting_description">""</string>
+    <string name="lan_settings">有线设置</string>
+    <string name="wifi_settings">无线设置</string>
+    <string name="display_settings">声音&amp;显示设置</string>
+    <string name="date_time_settings">日期和时间</string>
+    <string name="advance_settings">高级设置</string>
+    <string name="deviceinfo_settings">设备信息</string>
+    <string name="systeminfo_settings">本机信息</string>
+    <string name="networkinfo_settings">网络信息</string>
+    <string name="versioninfo_settings">版本信息</string>
+    <string name="regioninfo_settings">大区信息</string>
+    <string name="local_mediaplay">本地媒体</string>
+    <string name="itv_settings">账号&amp;平台设置</string>
+    <string name="netinformation_settings">网络信息</string>
+    <string name="other_settings">其他设置</string>
+    <string name="reboot_settings">重启系统</string>
+    <string name="reboot_message">"点击确定，设备将重启"</string>
+    <string name="reboot_ok">确认</string>
+    <string name="reboot_cancel">"取消"</string>
+    <string name="net_diagnosis">网络诊断&amp;测速</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="username">用户名:</string>
+    <string name="password">"密    码:"</string>
+    <string name="submit">"确    定"</string>
+    <string name="saveConfig">"保    存"</string>
+    <string name="change_mode">"点击切换至电信DHCP"</string>
+    <string name="password_hint">"请输入密码"</string>
+    <string name="username_hint">"请输入用户名"</string>
+    <string name="username_empty">"用户名不能为空"</string>
+    <string name="password_empty">"密码不能为空"</string>
+
+    <!-- LAN -->
+    <!--<string name="lan_desc">"PPPoE：需要移动账号进行拨号         LAN：手动设置上网地址        DHCP：自动获取IP地址        IPOE：认证后，自动获取IP地址"</string>-->
+    <string name="lan_desc">"静态：手动设置上网地址        DHCP：自动获取IP地址        IPOE：认证后，自动获取IP地址"</string>
+    <string name="lan_setting">有线接入</string>
+    <string name="stack_switch">双栈切换</string>
+    <string name="pppoe_setting">PPPoE设置</string>
+    <string name="PPPoE">PPPoE</string>
+    <string name="lan">静态连接</string>
+    <string name="nativeDHCP">DHCP</string>
+    <string name="nativeIPOE">IPOE</string>
+    <string name="ipv4">IPv4</string>
+    <string name="ipv6">IPv6</string>
+    <string name="getip">"【自动获取】"</string>
+    <string name="getipaddress">"连接"</string>
+    <string name="ipaddress">IP地址</string>
+    <string name="mask">子网掩码</string>
+    <string name="defaultNet">默认网关</string>
+    <string name="ipv4dns">DNS服务器</string>
+    <string name="defaultvalue">""</string>
+    <string name="split"></string>
+    <string name="ipoe_getipaddress">"连接"</string>
+    <string name="change_to_ipoe">正在认证并获取IP，请稍候&#8230;</string>
+    <string name="change_to_ipoe_fail">"认证失败，请确认用户名和密码"</string>
+
+    <string name="ipv6state">IPv6状态:</string>
+    <string name="closed">已关闭</string>
+    <string name="opend">已打开</string>
+    <string name="masklength">子网掩码长度:</string>
+    <string name="masklength2">64</string>
+    <string name="dnsserver">DNS服务器</string>
+    <string name="setip">"连   接"</string>
+
+    <string name="defaultvlaue2">0.0.0.0</string>
+    <string name="not_modify">未做任何修改</string>
+    <string name="ipExist">IP地址已获取到</string>
+    <string name="reconnecting">正在重连，请稍候&#8230;&#8230;</string>
+    <string name="pppoefailed">PPPoE拨号失败，请重试&#8230;</string>
+    <string name="pppoesuccess">PPPoE拨号成功，已获取到IP地址</string>
+    <string name="LANfailed">静态网络连接失败</string>
+    <string name="LANsuccess">已连接静态网络</string>
+    <string name="DHCPfailed">DHCP连接失败</string>
+    <string name="DHCPsuccess">已连接DHCP</string>
+    <string name="IPOEsuccess">已连接IPOE</string>
+    <string name="IPOEfailed">IPOE认证获取IP地址失败&#8230;</string>
+    <string name="ipaddr_error">IP地址不合法或存在空字段，请重新输入</string>
+    <string name="gateway_error">网关地址不合法或存在空字段，请重新输入</string>
+    <string name="mask_error">子网掩码地址不合法或存在空字段，请重新输入</string>
+    <string name="dns_error">DNS服务器地址不合法或存在空字段，请重新输入</string>
+    <string name="return_zeroconfig">请按【返回】键退出设置，进入零配置流程</string>
+
+    <string name="delaytips">温馨提示：首次安装请走零配置\n在设置中停留5分钟之后可以手动修改账号</string>
+    <!-- 蓝牙 -->
+    <string name="bluetooth_invalid">蓝牙设备</string>
+    <string name="bluetooth_tip">已配对的设备可检测到此设备</string>
+    <string name="device_bounded_success">配对成功</string>
+    <string name="device_bounded_failed">配对失败</string>
+    <string name="device_bounded">已配对</string>
+    <string name="device_bounding">正在配对······</string>
+    <string name="device_unbounded">未配对</string>
+    <string name="device_connected">已连接</string>
+    <string name="device_disconnect">未连接</string>
+    <string name="device_connecting">正在连接······</string>
+    <string name="bluetooth_device">可用蓝牙设备</string>
+    <string name="bluetooth_device_none">未在附近找到蓝牙设备</string>
+    <string name="discoverable">Discoverable</string>
+    <string name="start_scan">搜索设备</string>
+    <string name="scan_finished">搜索完成</string>
+    <string name="scaning">正在搜索...</string>
+    <string name="stop_scan">停止</string>
+    <string name="bluetooth_setting">蓝牙设置</string>
+    <string name="bluetooth_switch">蓝牙开关</string>
+    <string name="bluetooth_switch_name">蓝牙</string>
+    <string name="bluetooth_name">本机名称:</string>
+    <string name="bluetooth_bounded_devices">已配对的设备</string>
+    <string name="bluetooth_devices">可用设备</string>
+    <string name="bluetooth_noenable">无可用设备</string>
+    <string name="bluetooth_auto_open">开</string>
+    <string name="bluetooth_auto_close">关</string>
+    <string name="bluetooth_button_title">"蓝牙"</string>
+    <string name="bluetooth_available">附近的设备</string>
+    <string name="bluetooth_turning_on">正在打开蓝牙...</string>
+    <string name="bluetooth_turning_off">正在关闭蓝牙...</string>
+    <string name="bluetooth_closed">要搜索可用设备，请打开蓝牙功能。</string>
+    <!-- itv账号设置 -->
+    <string name="itv_yewu">ITV业务</string>
+    <string name="itv_setting">账号&amp;平台配置</string>
+    <string name="itv_accountsetting">账号设置</string>
+    <string name="itv_tvmssetting">TVMS信息</string>
+    <string name="itv_serversetting">平台配置</string>
+    <string name="itv_gatewaysetting">网管信息</string>
+    <string name="itv_platform">"当 前 平 台 :"</string>
+
+    <string name="itv_mainserver">认证服务器地址:</string>
+    <string name="itv_backupserver">备用认证服务器:</string>
+    <string name="itv_tms_mainserver">终端管理平台主地址:</string>
+    <string name="itv_tms_backupserver">终端管理平台备地址:</string>
+
+    <string name="itv_ntpserver">时间服务器地址:</string>
+    <string name="itv_ntpbackupserver">备用时间服务器:</string>
+    <string name="itv_updateserver">升级服务器地址:</string>
+    <string name="itv_backupdateserver">备用升级服务器地址:</string>
+    <string name="itvaccount">业务账号设置</string>
+
+    <string name="itv_account">"业 务 账 号 :"</string>
+    <string name="itv_password">"业 务 密 码 :"</string>
+    <string name="itv_huawei">"华为"</string>
+    <string name="itv_zhongxin">"中兴"</string>
+    <string name="itv_custom">"自定义"</string>
+
+    <string name="tvms_heartbeatURL">"心跳消息URL:"</string>
+    <string name="tvms_vodURL">"VOD消息URL:"</string>
+    <string name="tvms_heartbeatperiod">"心 跳 周 期(s):"</string>
+    <string name="tvms_delaytime">"延 迟 时 间(s):"</string>
+
+    <string name="gateway_heartbeatperiod">"心跳周期:"</string>
+    <string name="gateway_url">"网管地址:"</string>
+    <string name="gateway_regeuser">"注册用户:"</string>
+    <string name="gateway_regepsd">"注册密码:"</string>
+    <string name="gateway_cpeuser">"CPE用户 :"</string>
+    <string name="gateway_cpepsd">"CPE密码 :"</string>
+    <string name="gateway_regeuser_value">"STB"</string>
+    <string name="gateway_cpeuser_value">"ITMS"</string>
+
+    <!-- display -->
+    <string name="display_setting">声音&amp;显示</string>
+    <string name="sound_setting">声音模式</string>
+    <string name="media_setting">显示制式</string>
+    <string name="display_off_set">视频输出</string>
+    <string name="display_media_set">设置分辨率</string>
+
+    <string name="auto_HDMI">"自动"</string>
+    <string name="sound_HDMI">"HDMI 透传"</string>
+    <string name="sound_noHDMI">"HDMI非透传"</string>
+
+    <string name="auto_SPDIF">"自动"</string>
+    <string name="sound_SPDIF">"SPDIF透传"</string>
+    <string name="sound_noSPDIF">SPDIF非透传</string>
+
+    <string name="display_offsettitle">视频宽高比设置：</string>
+    <string name="display_auto">"自      动"</string>
+    <string name="display_4to3">"4    :    3"</string>
+    <string name="display_16to9">"16  :    9"</string>
+
+    <string name="display_changetypetitle">视频宽高比转换方式设置：</string>
+    <string name="display_draw">"拉伸"</string>
+    <string name="display_blackedge">"加黑边"</string>
+
+
+    <string name="display_pal">"P  A  L "</string>
+    <string name="display_ntsc">"N T S C"</string>
+
+    <string name="storage_setting">存储</string>
+    <string name="storage_internal">内部存储</string>
+    <string name="total_space">总空间</string>
+    <string name="available_space">可用空间</string>
+    <string name="system_flash">FLASH存储</string>
+    <string name="system_flash_daxiao">"4 GB"</string>
+    <string name="system_info">信息&amp;高级设置</string>
+    <string name="system_brand">品牌</string>
+    <string name="system_model">设备型号</string>
+    <string name="system_fpu">FPU</string>
+    <string name="system_fpu_info">Neon*4</string>
+    <string name="system_ram">RAM</string>
+    <string name="system_rom">ROM</string>
+    <string name="system_ram_size">2GB</string>
+    <string name="system_rom_size">16GB</string>
+    <string name="system_gpu">3D GPU</string>
+    <string name="system_gpu_info">Mali T764*4</string>
+    <string name="system_version">系统版本</string>
+    <string name="system_kernal_version">内核版本</string>
+    <string name="system_cpu">CPU</string>
+
+    <string name="system_cpu_info">CA17*4</string>
+
+    <string name="system_mac_address">MAC地址</string>
+    <string name="system_ip_address">IP地址</string>
+    <string name="system_serial_number">序列号</string>
+    <string name="system_build_version">版本号</string>
+    <string name="system_start_up_time">开机时间</string>
+
+    <string name="display_title">画面设置</string>
+    <string name="scale_title">画面缩放</string>
+    <string name="scale_title_hint">调整画面缩放的百分比</string>
+    <string name="scale_introduce_one">因为不同的电视对于视频信号处理的差异，可能导致画面有不完整的现象。</string>
+    <string name="scale_introduce_two">请调节缩放比例，直至屏幕的四边的警示色区域移出屏幕外。</string>
+    <string name="scale_move_back">按“返回”键退出并生效当前设置</string>
+    <string name="move_title">画面位移</string>
+    <string name="move_title_hint">调整画面在屏幕中的位置</string>
+    <string name="move_introduce_two">调整画面位置，使主要内容在电视屏幕以内</string>
+    <string name="move_OK">按“确定”键应用设置并进入缩放设置</string>
+    <string name="scale_OK">按“确定”键应用设置并进入位移设置</string>
+
+    <!-- wifi -->
+    <string name="wifi_signal3">"信号强"</string>
+    <string name="wifi_signal2">"信号较强"</string>
+    <string name="wifi_signal1">"信号较弱"</string>
+    <string name="wifi_signal0">"信号弱"</string>
+    <string name="wifi_signal00">"无信号或不在范围"</string>
+    <string name="wifi_connect">"连接"</string>
+    <string name="wifi_connected">"已连接"</string>
+    <string name="wifi_ip">"IP  地址 :"</string>
+    <string name="button_cancle">"取消"</string>
+    <string name="button_sure">确 定</string>
+    <string name="wifi_ssid">Network SSID</string>
+    <string name="wifi_security">密码保护:</string>
+    <string name="wifi_signal">信号强度 :</string>
+    <string name="wifi_status">wifi状态 :</string>
+    <string name="wifi_speed">连接速度</string>
+    <string name="wifi_ip_address">IP 地址</string>
+    <string name="wifi_ip_address_hint" translatable="false">192.168.1.128</string>
+    <string name="wifi_eap_method">EAP方法</string>
+    <string name="wifi_password">密码:</string>
+    <string name="wifi_show_password">密码可见</string>
+    <string name="wifi_ip_settings">IP settings</string>
+    <string name="wifi_disabled_heading"></string>
+    <string name="wifi_not_in_range">不在范围内</string>
+    <string name="wifi_wps_available_first_item">受保护的网络</string>
+    <string name="wifi_wps_available_second_item">\u0020(受保护的网络)</string>
+    <string name="wifi_security_short_wep">WEP</string>
+    <string name="wifi_security_short_wpa">WPA</string>
+    <string name="wifi_security_short_wpa2">WPA2</string>
+    <string name="wifi_security_short_wpa_wpa2">WPA/WPA2</string>
+    <string name="wifi_security_short_psk_generic">@string/wifi_security_short_wpa_wpa2</string>
+    <string name="wifi_security_short_eap">802.1x</string>
+    <string name="wifi_security_none">无</string>
+    <string name="wifi_security_wep">WEP</string>
+    <string name="wifi_security_wpa">WPA PSK</string>
+    <string name="wifi_security_wpa2">WPA2 PSK</string>
+    <string name="wifi_security_wpa_wpa2">WPA/WPA2 PSK</string>
+    <string name="wifi_security_psk_generic">@string/wifi_security_wpa_wpa2</string>
+    <string name="wifi_security_eap">802.1x EAP</string>
+    <string name="wifi_secured_first_item">"通过<xliff:g id="WIFI_SECURITY_SHORT">%1$s</xliff:g>进行保护"</string>
+    <string name="wifi_secured_second_item">"，通过<xliff:g id="WIFI_SECURITY_SHORT">%1$s</xliff:g>进行保护"</string>
+    <string name="wifi_closed">"要查看可用网络，请打开WIFI"</string>
+    <string name="wifi_closeing">"正在关闭WIFI..."</string>
+    <string name="wifi_opening">正在打开WIFI...</string>
+    <string name="wifi_scanning">正在搜索WIFI网络...</string>
+
+
+    <string name="wifi">Wifi</string>
+    <string name="cancel">"取    消"</string>
+    <string name="wififorget">"不保存"</string>
+    <string name="network_no_con">未连接</string>
+    <string name="connected">已连接</string>
+    <string name="disconnected">已断开</string>
+    <string name="connect">"连    接"</string>
+    <string name="wifi_list">可用网络</string>
+    <string name="network_onekey">一键联网</string>
+    <string name="exit">退出</string>
+    <string name="pppoe_pass_visible">"密码可见"</string>
+    <string name="advanced_setting_wifi_password">"密码"</string>
+    <string name="usename">账号</string>
+    <string name="advanced_setting_item_name">"网络名称"</string>
+    <string name="wifi_connect_button">"连接"</string>
+    <string name="wireless_setting">Wi-Fi设置</string>
+    <string name="wifi_switch_name">Wi-Fi</string>
+    <string name="wifi_enabling">正在打开</string>
+    <string name="wifi_disenabling">正在关闭</string>
+    <string name="wifi_connecting">正在连接&#8230;</string>
+
+    <string name="wifi_setting">无线接入</string>
+    <string name="wifi_tips">（请先连接上Wifi，再选择网络接入模式）</string>
+    <string name="wifi_available">附近可用的Wi-Fi</string>
+    <string name="wifi_type">无线接入类型选择</string>
+    <string name="nextstep">下一步</string>
+    <string name="prestep">上一步</string>
+    <string name="wifi_pppoe">无线PPPoE设置</string>
+    <string name="wifi_ipoe">无线IPoE设置</string>
+    <string name="wifi_static">无线静态IP设置</string>
+    <string name="wifi_accessmode">请选择wifi接入模式：</string>
+
+    <string name="ssid">SSID:</string>
+    <string name="wifi_psd">请输入网络安全密钥</string>
+    <string name="wifidescription"></string>
+
+    <string name="wifi_disabled_generic">"未启用"</string>
+    <string name="wifi_remembered">"已保存"</string>
+    <string name="wifi_forget">忘记此网络</string>
+    <string name="forget">"忘    记"</string>
+    <string name="wifi_disabled_network_failure">"已停用（互联网连接状况不佳）"</string>
+    <string name="wifi_disabled_pppoe_auth_failure">"PPPoE用户名或密码错误"</string>
+    <string name="wifi_disabled_password_failure">"Wifi密码错误"</string>
+
+    <string name="wifi_ap">Wifi热点</string>
+    <string name="security">加密方式</string>
+    <string name="security_none">无</string>
+    <string name="security_wpa">WPA-PSK</string>
+    <string name="security_wpa2">WPA2-PSK</string>
+    <string name="hotspot_name">热点名称</string>
+    <string name="hotspot_psd">密码</string>
+    <string name="hotspot_psd_error">对不起，密码长度至少为8位</string>
+    <string name="psd_error">密码不能为空</string>
+    <string name="ssid_error">SSID不能为空</string>
+    <string name="ap_opening">正在开启wifi热点，请稍候&#8230;</string>
+    <string name="ap_opened">wifi热点已开启</string>
+    <!-- system info-->
+    <string name="sysinfo_setting">系统信息</string>
+    <string name="netInfo">网络信息</string>
+    <string name="ip_address">"IP地址"</string>
+    <string name="net_mask">"子网掩码"</string>
+    <string name="get_way">"默认网关"</string>
+    <string name="dns1_server">"DNS服务器1"</string>
+    <string name="dns2_server">"DNS服务器2"</string>
+    <string name="cable_PPPoE">"有线PPPoE"</string>
+    <string name="cable_Static">"有线静态IP"</string>
+    <string name="cable_DHCP">"有线DHCP"</string>
+    <string name="wifi_PPPoE">"无线PPPoE"</string>
+    <string name="wifi_Static">"无线静态IP"</string>
+    <string name="wifi_DHCP">"无线DHCP"</string>
+
+    <string name="deviceInfo">设备信息</string>
+    <string name="changjia">生成厂家</string>
+    <string name="deviceModel">设备型号</string>
+    <string name="device_version">"设备型号"</string>
+    <string name="device_stbid">"设备序列号"</string>
+    <string name="device_cpu">"设备CPU"</string>
+    <string name="system_memory">内存大小</string>
+    <string name="storage_flash">FLASH存储</string>
+    <string name="system_oui">OUI</string>
+
+    <string name="verInfo">版本信息</string>
+    <string name="system_android_version">安卓版本</string>
+    <string name="system_softver">软件版本</string>
+    <string name="system_hardver">硬件版本</string>
+    <string name="middlewareInfo">中间件版本</string>
+    <string name="publicTimeInfo">发布时间</string>
+
+    <string name="serverInfo">服务器信息</string>
+    <string name="EPGServerInfo">EPG服务器信息</string>
+    <string name="UpdateServerInfo">升级服务器信息</string>
+    <string name="TimeServerInfo">时间服务器信息</string>
+    <string name="ManagerServerInfo">管理服务器信息</string>
+
+    <string name="system_setting_info">应用标识</string>
+    <string name="system_itv_info">itv版本</string>
+    <string name="image_player_info">图片浏览版本</string>
+    <string name="music_player_info">音乐播放版本</string>
+    <string name="video_player_info">视频播放版本</string>
+    <string name="storage_scanner_info">本地媒体版本</string>
+
+    <!-- advance setting -->
+    <string name="advance_setting">高级设置</string>
+    <string name="sleep_set">休眠设置</string>
+    <string name="sys_sleep">休眠策略</string>
+    <string name="sleep_time">休眠时间设定</string>
+    <string name="sleep_time_h">小时</string>
+    <string name="sleep_time_m">分钟</string>
+    <string name="def_hour">"00"</string>
+    <string name="def_minu">"00"</string>
+
+    <string name="reset">恢复出厂设置</string>
+    <string name="program">开机直达</string>
+    <string name="more">更多功能</string>
+    <string name="usb_update">U盘升级</string>
+    <string name="online_update">在线升级</string>
+    <string name="device_detect">设备自检</string>
+    <string name="detect_cpu">CPU状态:</string>
+    <string name="detect_dsp">DSP状态:</string>
+    <string name="detect_flash">Flash状态:</string>
+    <string name="detect_memory">内存状态:</string>
+    <string name="detect_video">视频芯片:</string>
+    <string name="detect_audio">音频芯片:</string>
+    <string name="detect_net">网卡状态:</string>
+    <string name="detect_return">"返    回"</string>
+
+    <string name="reset_string">警告：恢复出厂设置将清空所有用户设置数据并\n"  在两秒后重启系统，请谨慎操作！"</string>
+    <string name="language">菜单语言</string>
+    <string name="backgroundMusic">背景音乐</string>
+    <string name="menuStyle">皮肤设置</string>
+    <string name="exit_setting">"请按【首页】按钮退出设置"</string>
+    <string name="error_psd">"密码错误"</string>
+    <string name="wifi_founction_opened">"wifi功能已打开"</string>
+    <string name="wifi_founction_closed">"wifi功能已关闭"</string>
+    <string name="not_found">"没有找到升级文件！"</string>
+
+    <string name="change_success">"修改成功，需重启生效"</string>
+    <string name="cannotEmpty">"业务账号和密码不能为空"</string>
+    <string name="address_empty">"地址不能为空"</string>
+
+    <string name="change_no">"未做任何修改"</string>
+
+    <string name="change_huawei">"修改成功,需重启生效"</string>
+
+    <string name="change_zhongxing">"切换至中兴平台,需重启生效"</string>
+
+    <string name="dhcp_net_mode">"接入方式"</string>
+
+    <string name="change_to_dhcp">网络模式已切换至DHCP，正在获取IP，请稍候&#8230;</string>
+    <string name="change_to_lan">正在切换至静态网络</string>
+    <string name="connected_lan">静态网络已连接</string>
+    <string name="change_to_pppoe">正在进行PPPoE拨号，请稍候&#8230;</string><!-- \n"   系统将在2秒后重启"</string-->
+
+    <string name="reset_tips">系统将在稍后重启</string>
+
+    <string name="display_area">图像显示区域设置</string>
+    <string name="free_zoom">自由缩放</string>
+    <string name="propor_zoom">比例缩放</string>
+
+    <string name="media_576">"576P 50Hz"</string>
+    <string name="media_one">"720P 50Hz"</string>
+    <string name="media_two">"720P 60Hz  "</string>
+    <string name="media_three">"1080i 50Hz"</string>
+    <string name="media_four">"1080i 60Hz  "</string>
+    <string name="media_five">"1080P 50Hz"</string>
+    <string name="media_six">  "1080P 60Hz  "</string>
+    <string name="media_seven">"2160P 24Hz  "</string>
+    <string name="media_eight">"2160P 25Hz"</string>
+    <string name="media_nine">"2160P 30Hz  "</string>
+
+    <string name="wifi_net">请输入密码</string>
+    <string name="open_code">请输入密码</string>
+    <string name="open_enter">进入</string>
+    <string name="open_cancel">取消</string>
+    <string name="sysinfo">系统信息</string>
+    <string name="display_here">这里是信息显示</string>
+
+    <string name="advance_channel">频道信息</string>
+    <string name="advance_epg">EPG信息</string>
+
+    <string name="update">"升级"</string>
+    <string name="update_cancel">"取消"</string>
+
+    <string name="update_yes_no">检测到升级文件\n"是否进行系统升级？"</string>
+    <string name="modify_language">设置成功\n"已保存配置信息"</string>
+    <string name="sleeperror">对不起，进入休眠状态的时间\n不能小于5分钟，请重新设置</string>
+    <string name="notSupport4K">当前设备不支持该分辨率</string>
+    <string name="PAL_NTSC">AV输出模式修改分辨率无效，请选择PAL或NTSC</string>
+    <string name="sleeptips">系统将在</string>
+    <string name="sleeptips1">秒后进入休眠状态</string>
+    <string name="sleeptips2">此时按任意键可取消休眠</string>
+
+    <string name="udiskmounted">U盘已挂载</string>
+    <string name="udiskremove">U盘已移除</string>
+    <string name="authfailure">认证失败，暂无法使用本地媒体</string>
+    <string name="route_setting">路由配置</string>
+    <string name="reboot_setting">重启系统</string>
+    <string name="routeSetdhcp">设置</string>
+    <string name="routeSoftwareStr">软件版本</string>
+    <string name="routeHardwareStr">硬件版本</string>
+    <string name="routeTypeStr">连接类型</string>
+    <string name="routeOttTagStr">OTT TAG</string>
+    <string name="routeVLanIdStr">OTT VLanID</string>
+    <string name="routeWanMacStr">WAN Mac</string>
+
+    <string name="mediaplay">媒体播放</string>
+
+    <!--网络诊断&测速相关-->
+    <string name="network_test">网络诊断</string>
+    <string name="network_speed">网络测速</string>
+    <string name="network_ping">Ping测试</string>
+    <string name="network_ping_host_error">无法访问目标主机</string>
+    <string name="network_trace">Trace测试</string>
+    <string name="network_ping_start">开始测试</string>
+    <string name="network_ping_restart">重新测试</string>
+    <string name="network_diagnosis_yet">"网络诊断中..."</string>
+    <string name="network_diagnosis_start">"开始网络诊断"</string>
+    <string name="network_no_net">"当前无网络连接"</string>
+    <string name="network_test_start">"开始测速"</string>
+    <string name="network_test_stop">"停止测速"</string>
+    <string name="max_speed_title">"峰值网速："</string>
+    <string name="average_speed_title">"平均网速："</string>
+    <string name="net_connectivity_test">"网络连接检测"</string>
+    <string name="net_ip_address_get_test">"地址获取检测"</string>
+    <string name="net_gateway_test">"网关连通性检测"</string>
+    <string name="net_http_test">"中心平台网络连通性检测"</string>
+    <string name="net_ntp_test">"NTP连通性检测"</string>
+    <string name="net_multicast_test">"组播连通性检测"</string>
+    <string name="net_dns_test">"DNS解析状态"</string>
+
+    <string name="network_host_address">"请输入测试网址或IP"</string>
+    <string name="network_address_erro">"地址不合法，请重新确认"</string>
+
+    <!--system info 相关字符-->
+    <string name="title_activity_main_sysinfo">系统信息</string>
+    <string name="version">设备型号</string>
+    <string name="cpu_info">CPU信息</string>
+    <string name="ram_info">RAM</string>
+    <string name="flash_info">Flash</string>
+    <string name="hardware_version">硬件版本</string>
+    <string name="mac">MAC地址</string>
+    <string name="manufacturer">生产厂家</string>
+    <string name="versionName">牌照方版本</string>
+    <string name="kernel">内核版本</string>
+    <string name="software_version">软件版本</string>
+    <string name="barcode">机号</string>
+    <string name="stbId">STBID</string>
+    <string name="ok_btn">确定</string>
+    <string name="cancel_btn">取消</string>
+    <string name="wifi_mac">无线MAC</string>
+    <string name="colon">:</string>
+    <string name="sn">SN</string>
+    <string name="manufacturer_value">CMDC</string>
+    <string name="sn_value">00000000000000000</string>
+    <string name="DeviceID">序列号</string>
+    <string name="DDR">内存(DDR)</string>
+    <string name="EMMC">存储(EMMC)</string>
+    <string name="android">安卓版本</string>
+    <string name="build_time">版本时间</string>
+    <!--net info 相关字符-->
+    <string name="net_mode_title">网络连接方式</string>
+    <string name="ip_title">IP地址</string>
+    <string name="mask_title">子网掩码 </string>
+    <string name="gateway_title">网关地址</string>
+    <string name="dns_title">DNS服务器</string>
+    <string name="netmode_ethernet">有线网络</string>
+    <string name="netmode_wifi">无线网络</string>
+
+    <!--other settings相关-->
+    <string name="standby_time">自动待机</string>
+    <string name="clear_cache">清理缓存</string>
+    <string name="mast_clear">恢复出厂设置</string>
+    <string name="app_manager">应用管理</string>
+    <string name="region_title">当前所在区域</string>
+    <string name="account">业务账号</string>
+    <string name="ntpserver">时间同步服务器地址:</string>
+
+
+    <string name="dialog_title">提示</string>
+    <string name="dialog_message">是否保存当前分辨率</string>
+    <string name="dialog_ok">确认</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="input_opration">确定要取消配对吗？</string>
+
+</resources>

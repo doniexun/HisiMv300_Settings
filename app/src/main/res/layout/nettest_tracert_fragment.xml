@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/nettest_logo" />
+
+        <Button
+            android:id="@+id/button_start_tracert"
+            android:layout_width="145dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/submit_selector"
+            android:text="开始Trace测试"
+            android:textColor="#ffe1e1e1"
+            android:textSize="21dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_tracert_address"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable="@drawable/edit_cursor"
+            android:background="@drawable/edit_selector"
+            android:singleLine="true"
+            android:hint="@string/network_host_address"
+            android:textColor="#ffe1e1e1"
+            android:textSize="25sp"
+            android:nextFocusUp="@+id/title_button_trace"/>
+
+        <TextView
+            android:id="@+id/tracert_result"
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffe1e1e1"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="550dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/display_box_background">
+
+            <TextView
+                android:id="@+id/tracert_line"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffe1e1e1"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

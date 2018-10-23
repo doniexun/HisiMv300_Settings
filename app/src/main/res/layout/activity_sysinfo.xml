@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/systeminfo_settings"
+            android:textColor="#ffe1e1e1"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/deviceInfo"
+            style="?title_button"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="50dp"
+            android:text="@string/deviceinfo_settings" />
+        <!--
+		<Button
+            android:id="@+id/netInfo"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="50dp"
+            android:text="@string/networkinfo_settings"
+            style="?title_button"/>
+        <Button
+            android:id="@+id/version_Info"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="50dp"
+            android:text="@string/versioninfo_settings"
+            style="?title_button"/>
+
+        <Button
+            android:id="@+id/region_Info"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="50dp"
+            android:text="@string/regioninfo_settings"
+            style="?title_button"/>
+         -->
+    </LinearLayout>
+
+    <Button
+        android:layout_width="1000dp"
+        android:layout_height="3dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:focusable="false"
+        android:gravity="center_horizontal"
+        android:textColor="#565656" />
+
+    <FrameLayout
+        android:id="@+id/sysInfo_frameLayout"
+        android:layout_width="1000dp"
+        android:layout_height="520dp"
+        android:layout_gravity="center"></FrameLayout>
+</LinearLayout>

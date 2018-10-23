@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Settings</string>
+    <string name="setting_description">""</string>
+    <string name="lan_settings">Lan Setting</string>
+    <string name="wifi_settings">Wifi</string>
+    <string name="display_settings">Sound&amp;Display</string>
+    <string name="advance_settings">Advance Settings</string>
+    <string name="deviceinfo_settings">Device Info</string>
+    <string name="systeminfo_settings">System Info</string>
+    <string name="networkinfo_settings">Network Info</string>
+    <string name="versioninfo_settings">Version Info</string>
+    <string name="regioninfo_settings">Region Info</string>
+    <string name="local_mediaplay">Media</string>
+    <string name="itv_settings">Itv</string>
+	<string name="netinformation_settings">Network Info</string>
+    <string name="other_settings">Other Settings</string>
+    <string name="reboot_settings">Reboot</string>
+    <string name="reboot_message">"click ok , device will reboot"</string>
+    <string name="reboot_ok">OK</string>
+    <string name="reboot_cancel">"Cancel"</string>
+    <string name="net_diagnosis">Net Diagnosis</string>
+    
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	
+    <string name="username">UserName:</string>
+    <string name="password">"Password:"</string>
+    <string name="submit">"OK"</string>
+    <string name="saveConfig">"Save"</string>
+    <string name="change_mode">"点击切换至电信DHCP"</string>
+    <string name="password_hint">"enter a password"</string>
+    <string name="username_hint">"enter a username"</string>
+    <string name="username_empty">"username can't be empty"</string>
+    <string name="password_empty">"password can't be empty"</string>
+    <!-- LAN -->
+    <string name="lan_desc">"PPPoE：need telecom Network account to dial.   LAN：set ip address manually.   DHCP：get IP address automatically"</string>
+    <string name="lan_setting">Lan Connect</string>
+    <string name="stack_switch">Dual Stack</string>
+    <string name="pppoe_setting">"PPPoE Settings"</string>
+    <string name="PPPoE">PPPoE</string>
+    <string name="lan">"static IP"</string>
+    <string name="nativeDHCP">DHCP</string>
+	<string name="ipv4">IPv4</string>
+	<string name="ipv6">IPv6</string>
+	<string name="getip">"【automatic】"</string>
+	<string name="getipaddress">"OK"</string>
+	<string name="ipaddress">"IP Address"</string>
+	<string name="mask">"Mask"</string>
+	<string name="defaultNet">Gateway</string>
+	<string name="ipv4dns">DNS</string>
+	<string name="defaultvalue">""</string>
+	<string name="split"></string>		
+	
+	<string name="ipv6state">IPv6 Status:</string>
+	<string name="closed">Closed</string>
+	<string name="opend">Opened</string>
+	<string name="masklength">"Mask length:"</string>
+	<string name="masklength2">64</string>
+	<string name="dnsserver">DNS1</string>
+	<string name="dnsserver2">DNS2</string>
+	<string name="setip">"OK"</string>
+			 
+	<string name="defaultvlaue2">0.0.0.0</string>
+	<string name="not_modify">"Not make any changes"</string>
+	<string name="ipaddr_error">"IP Address is invalid， Please re-enter"</string>
+	<string name="gateway_error">"Gatewat is invalid， Please re-enter"</string>
+	<string name="mask_error">"Mask is invalid， Please re-enter"</string>
+	<string name="dns_error">"DNS is invalid， Please re-enter"</string>
+	<string name="ipExist">IP address has been obtained</string>
+	<string name="reconnecting">Reconnecting，please wait&#8230;&#8230;</string>
+	<string name="pppoefailed">PPPoE dial failed，please try again&#8230;</string>
+	<string name="pppoesuccess">PPPoE dial success</string>
+	<string name="DHCPfailed">DHCP access failed，please try again&#8230;</string>
+	
+	<!-- itv账号设置 -->
+	<string name="itv_yewu">"ITV Business"</string>
+	<string name="itv_setting">"ITV Account Setting"</string>
+	<string name="itv_accountsetting">"Account Setting"</string>
+	<string name="itv_tvmssetting">"TVMS Info"</string>
+	<string name="itv_serversetting">"Server Info"</string>
+	<string name="itv_gatewaysetting">"Manager Info"</string>
+	<string name="itv_platform">"Current platform:"</string>
+	
+	<string name="itv_mainserver">"Auth server:"</string>
+	<string name="itv_backupserver">"BackupAuth server:"</string>
+	
+	<string name="itv_ntpserver">"Time Server:"</string>
+	<string name="itv_ntpbackupserver">"BackupTime server:"</string>
+	<string name="itv_updateserver">"Upgrade server:"</string>
+	<string name="itv_backupdateserver">"BackupUpgrade server:"</string>
+	<string name="itvaccount">"Business Account Setting"</string>
+		
+	<string name="itv_account">"Business account:"</string>
+	<string name="itv_password">"Business password:"</string>
+	<string name="itv_huawei">"Huawei"</string>
+	<string name="itv_zhongxin">"ZTE"</string>
+	<string name="itv_custom">"Customize"</string>
+	
+	<string name="tvms_heartbeatURL">"Heartbeat URL:"</string>
+	<string name="tvms_vodURL">"VOD Message URL:"</string>
+	<string name="tvms_heartbeatperiod">"心 跳 周 期(s):"</string>
+	<string name="tvms_delaytime">"延 迟 时 间(s):"</string>
+	
+	<string name="gateway_heartbeatperiod">"Heartbeat period:"</string>
+	<string name="gateway_url">"NetManager Server:"</string>
+	<string name="gateway_regeuser">"Register userName:"</string>
+	<string name="gateway_regepsd">"Register password:"</string>
+	<string name="gateway_cpeuser">"CPE userName:"</string>
+	<string name="gateway_cpepsd">"CPE password:"</string>
+	<string name="gateway_regeuser_value">"cpe"</string>
+	<string name="gateway_cpeuser_value">"cpe"</string>
+	
+	<!-- display -->
+    <string name="display_setting">Sound&amp;Display</string>
+    <string name="sound_setting">"Sound Mode"</string>
+    <string name="media_setting">"Display Format"</string>
+    <string name="display_off_set">"Video Output"</string>
+    <string name="display_pal_ntsc">"Screen Format"</string>
+    
+    <string name="sound_HDMI">"HDMI(Pass)"</string>
+    <string name="sound_SPDIF">"SPDIF(Pass)"</string>
+    <string name="sound_noHDMI">"HDMI(No Pass)"</string>
+    <string name="sound_noSPDIF">"SPDIF(No Pass)"</string>
+    <string name="display_auto">"Auto"</string>
+    <string name="display_4to3">"4    :    3"</string>
+    <string name="display_16to9">"16  :    9"</string>
+    
+     <string name="display_pal">"P  A  L "</string>
+    <string name="display_ntsc">"N T S C"</string>
+    
+    <string name="bluetooth_setting">Bluetooth Settings</string>
+	<string name="bluetooth_switch_name">Bluetooth</string>
+	<string name="bluetooth_name">设备名称</string>
+	<string name="bluetooth_devices">可用设备</string>
+	<string name="storage_setting">Storage</string>
+	<string name="storage_internal">Internal storage</string>
+	<string name="total_space">Total Space</string>
+	<string name="available_space">Free Space</string>
+	<string name="system_flash">FLASH Memory</string>
+	<string name="system_flash_daxiao">"4 GB"</string>
+	<string name="system_info">"System Info"</string>
+	<string name="system_brand">品牌</string>
+	<string name="system_model">设备型号</string>
+	<string name="system_fpu">FPU</string>
+	<string name="system_fpu_info">Neon*4</string>
+	<string name="system_ram">RAM</string>
+	<string name="system_rom">ROM</string>
+	<string name="system_ram_size">2GB</string>
+	<string name="system_rom_size">16GB</string>
+	<string name="system_gpu">3D GPU</string>
+	<string name="system_gpu_info">Mali T764*4</string>
+	<string name="system_version">系统版本</string>
+	<string name="system_kernal_version">内核版本</string>
+	<string name="system_cpu">CPU</string>
+	
+	<string name="system_cpu_info">CA17*4</string>
+	
+	<string name="system_mac_address">"MAC Address" </string>
+	<string name="system_ip_address">"IP Address"</string>
+	<string name="system_serial_number">"Serial number"</string>
+	<string name="system_build_version">"version"</string>	
+	<string name="system_start_up_time">"开机时间"</string>
+	
+	<string name="display_title">Graphics settings</string>
+    <string name="scale_title">Zoom</string>
+    <string name="scale_title_hint">Adjust the zoom percentage of graphics</string>
+    <string name="scale_introduce_one">Because of the differences in the video signal processing, it may cause the picture to be incomplete.</string>
+    <string name="scale_introduce_two">Adjust the scaling, until the contents is displayed on the entire TV screen.</string>
+    <string name="scale_move_back">Press "\""back"\"" button to exit and save current settings</string>
+    <string name="move_title">Move</string>
+    <string name="move_title_hint">Adjust the position of the canvas in the screen</string>
+    <string name="move_introduce_two">Adjust the screen position, so that the main contents into the TV screen</string>
+	<string name="move_OK">Press "\""OK"\"" button to apply the setting and enter Zoom Setting</string>
+	<string name="scale_OK">Press "\""OK"\"" button to apply the setting and enter Move settings</string>
+	
+	<!-- wifi -->
+	<string name="wifi">Wifi</string>
+	<string name="cancel">Cancle</string>
+   	<string name="network_no_con">"not connected"</string>
+   	<string name="connected">"conncted"</string>
+   	<string name="disconnected">"disconnected"</string>
+   	<string name="connect">"Connect"</string>
+   	<string name="wifi_list">"available wifi"</string>
+   	<string name="network_onekey">一键联网</string>
+   	<string name="exit">exit</string>
+   	<string name="pppoe_pass_visible">"Password visible"</string>
+   	<string name="advanced_setting_wifi_password">"Password"</string>
+   	<string name="usename">"Username"</string>
+   	<string name="advanced_setting_item_name">"SSID"</string>
+   	<string name="wifi_connect_button">"connect"</string>
+   	<string name="wireless_setting">"Wi-Fi Setting"</string>
+	<string name="wifi_switch_name">Wi-Fi</string>
+	<string name="wifi_enabling">opening</string>
+	<string name="wifi_disenabling">closing</string>
+	<string name="wifi_connecting">connecting&#8230;</string>
+
+   	<string name="wifi_setting">"Wireless Access"</string>
+   	<string name="wifi_tips">"（Please connect to the WiFi firstly, and then choose network access mode）"</string>
+   	<string name="wifi_available">"Available Wi-Fi"</string>
+   	<string name="wifi_type">无线接入类型选择</string>
+   	<string name="nextstep">next</string>
+   	<string name="prestep">back</string>
+   	<string name="wifi_pppoe">Wireless PPPoE Setting</string>
+   	<string name="wifi_ipoe">Wireless IPoE Setting</string>
+   	<string name="wifi_static">Wireless Static-IP Setting</string>
+   	<string name="wifi_accessmode">"Please select the WiFi access mode:"</string>
+   	
+   	<string name="ssid">SSID:</string>
+   	<string name="wifi_psd">"Please enter the security key"</string>
+   	<string name="wifidescription"></string>
+	
+   	<string name="wifi_ap">Wifi-Hotspot</string>
+   	<string name="security">Security</string>
+   	<string name="security_none">None</string>
+   	<string name="security_wpa">WPA-PSK</string>
+   	<string name="security_wpa2">WPA2-PSK</string>
+   	<string name="hotspot_name">NetWork SSID</string>
+   	<string name="hotspot_psd">Password</string>
+   	<string name="hotspot_psd_error">"I'm sorry, the length of password is at least 8."</string>
+   	<string name="psd_error">"Password can't be empty"</string>			
+   	<string name="ssid_error">"SSID can't be empty"</string>
+	<string name="ap_opening">"Opening the WiFi-AP, please wait&#8230;"</string>			
+   	<string name="ap_opened">"WiFi-AP have been turned on"</string>
+	<!-- system info-->	
+	<string name="sysinfo_setting">"System Info"</string>
+	<string name="netInfo">"NetWork Info"</string>
+	<string name="ip_address">"IP Address"</string>
+	<string name="net_mask">"Subnet Mask"</string>
+	<string name="get_way">"Default Gateway"</string>
+	<string name="dns1_server">"DNS1"</string>
+	<string name="dns2_server">"DNS2"</string>
+		
+	<string name="deviceInfo">"Device Info"</string>
+	<string name="changjia">Factory</string>
+	<string name="deviceModel">Model</string>
+	<string name="device_version">"设备型号"</string>
+	<string name="device_stbid">"Serial number"</string>
+	<string name="device_cpu">"CPU"</string>
+	<string name="system_memory">Memory</string>
+	<string name="storage_flash">FLASH</string>
+	<string name="system_oui">OUI</string>
+	
+	<string name="verInfo">"Version Info"</string>
+	<string name="system_android_version">android版本</string>
+	<string name="system_softver">"Soft Version"</string>
+	<string name="system_hardver">"Hardware Version"</string>
+	<string name="middlewareInfo">"STB Version"</string>
+	<string name="publicTimeInfo">"Soft ReleaseTime"</string>
+			
+	<string name="serverInfo">"Server Info"</string>
+	<string name="EPGServerInfo">"EPG server"</string>
+	<string name="UpdateServerInfo">"Upgrade server"</string>
+	<string name="TimeServerInfo">"Time server"</string>
+	<string name="ManagerServerInfo">"Manage server"</string>
+			
+	<string name="system_setting_info">应用标识</string>
+	<string name="system_itv_info">itv版本</string>
+	<string name="image_player_info">图片浏览版本</string>
+	<string name="music_player_info">音乐播放版本</string>
+	<string name="video_player_info">视频播放版本</string>
+	<string name="storage_scanner_info">本地媒体版本</string>
+	
+	<!-- advance setting -->
+	<string name="advance_setting">"Advance Setting"</string>
+	<string name="sleep_set">"Standby Setting"</string>
+	<string name="sys_sleep">"Auto Sleep"</string>
+	<string name="sleep_time">"Time to sleep"</string>
+	<string name="sleep_time_h">Hour</string>
+	<string name="sleep_time_m">Minutes</string>
+	<string name="def_hour">"00"</string>
+	<string name="def_minu">"00"</string>
+		
+	<string name="reset">"Restore Factory Setting"</string>
+	<string name="program">"Startup items"</string>
+	<string name="more">"More Setting"</string>
+	<string name="usb_update">"U disk Upgrade"</string>
+    <string name="online_update">"Online Upgrade"</string>
+    <string name="device_detect">"Device AutoCheck"</string>
+    <string name="detect_cpu">CPU status</string>
+    <string name="detect_dsp">DSP status</string>
+    <string name="detect_flash">Flash status</string>
+    <string name="detect_memory">Memory status</string>
+    <string name="detect_video">Video decoder status</string>
+    <string name="detect_audio">Audio decoder status</string>
+    <string name="detect_net">NIC status</string>
+    <string name="detect_return">"Return"</string>
+	
+	<string name="reset_string">"Warning：restore factory setting will clean up the data set by user,and the system will reboot after 2 seconds,Handle With Care！"</string>
+	<string name="language">"Menu Language"</string>
+	<string name="backgroundMusic">"Background Music"</string>
+	<string name="menuStyle">"Skin setting"</string>
+    <string name="exit_setting">"please press 【home-page】 key to exit the settings"</string>
+    <string name="error_psd">"Password error"</string>
+    <string name="not_found">"No upgrade file found ！"</string>
+    
+    <string name="change_success">"Modify successfully，it takes effect after reboot"</string>
+    <string name="cannotEmpty">"Business account and password can't be empty"</string>
+    <string name="change_no">"Not make any changes"</string>
+    
+    <string name="change_huawei">"The platform has been changed, it worked after reboot"</string>
+    
+    <string name="change_zhongxing">"Switched to ZTE platform,it worked after reboot"</string>
+    
+    <string name="dhcp_net_mode">"Connection mode"</string>
+	
+	<string name="change_to_dhcp">"Network has been switched to DHCP，Getting the IP, please wait&#8230;"</string>
+	<string name="change_to_lan">"Network mode has been switched to static-IP"</string>
+	<string name="change_to_pppoe">"PPPoE dialing, please wait&#8230;"</string><!-- \n"   The system will reboot after 2 minutes""</string-->
+	
+	<string name="reset_tips">"The system will be restarted later."</string>
+
+	<string name="display_area">Display area set</string>
+	<string name="free_zoom">Move freely</string>
+	<string name="propor_zoom">Scaling</string>
+	
+	<string name="media_576">"576P"</string>
+	<string name="media_one">"720P"</string>
+	<string name="media_two">"720P 60Hz  "</string>
+	<string name="media_three">"1080i"</string>
+	<string name="media_four">"1080i60Hz  "</string>
+	<string name="media_five">"1080P"</string>
+	<string name="media_six">  "1080P60Hz  "</string>
+	<string name="media_seven">"2160P24Hz  "</string>
+	<string name="media_eight">"2160P"</string>
+	<string name="media_nine">"2160P30Hz  "</string>
+	 
+	<string name="wifi_net">请输入密码</string>
+	<string name="open_code">请输入密码</string>
+	<string name="open_enter">进入</string>
+	<string name="open_cancel">取消</string>
+	<string name="sysinfo">SystemInfo</string>
+	<string name="display_here">这里是信息显示</string>
+	
+	<string name="advance_channel">"Channel"</string>
+	<string name="advance_epg">"EPG"</string>
+	
+	<string name="update">"Upgrade"</string>
+	<string name="update_cancel">"Cancle"</string>
+	
+	<string name="update_yes_no">"Upgrade file detected\n"Do you want to upgrade the system？""</string>
+	<string name="modify_language">Set up successfully\n"The configuration info has been saved"</string>
+	<string name="sleeperror">"I'm sorry, the time to enter sleep state can not be less than 5 minutes, please reset"</string>
+	<string name="notSupport4K">Current device does not support this resolution!</string>
+	<string name="sleeptips">The system will enter the sleep state after</string>
+	<string name="sleeptips1">seconds</string>
+	<string name="sleeptips2">Press any key to cancle this action&#8230;</string>
+	
+	<string name="udiskmounted">U-disk has been mounted</string>
+	<string name="udiskremove">U-disk has been removed</string>
+	<string name="authfailure">"Authentication failed, the local media can't be used temporarily"</string>
+	
+	<string name="mediaplay">Local Media</string>
+
+	<string name="ntpserver">Time Server</string>
+
+    <!--other settings相关-->
+    <string name="standby_time">Standby Auto</string>
+    <string name="clear_cache">Clean cache</string>
+    <string name="mast_clear">Reset device</string>t
+    <string name="app_manager">App managemen</string>
+</resources>

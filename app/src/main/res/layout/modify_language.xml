@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="453dp"
+    android:layout_height="203dp"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical" 
+    android:gravity="center">
+   
+	<TextView
+	    android:id="@+id/errortips" 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:text="@string/modify_language"
+	    android:textSize="25sp"
+	    android:textColor="#ffe1e1e1"/>
+	
+    <Button
+        style="?android:attr/buttonBarButtonStyle"
+        android:id="@+id/modifylage"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/submit_selector"
+        android:text="@string/submit"
+        android:textColor="#ffe1e1e1"
+        android:textSize="20sp" />
+</LinearLayout>

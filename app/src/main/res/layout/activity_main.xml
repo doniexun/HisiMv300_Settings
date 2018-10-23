@@ -1,0 +1,261 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/app_name"
+        android:textColor="#ffe1e1e1"
+        android:textSize="30sp" />
+
+    <!--android:layout_marginLeft="200dp"-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/framelayout_lan"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <ImageButton
+                android:id="@+id/lan"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/imagebutton_selector"
+                android:scaleType="fitCenter"
+                android:src="@drawable/home_lan_setting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/lan_settings"
+                android:textColor="#ffe1e1e1"
+                android:textSize="25sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/framelayout_wifi"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <ImageButton
+                android:id="@+id/wifi"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/imagebutton_selector"
+                android:scaleType="fitCenter"
+                android:src="@drawable/home_wifi_setting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/wifi_settings"
+                android:textColor="#ffe1e1e1"
+                android:textSize="25sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/framelayout_netinfo"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <ImageButton
+                android:id="@+id/netinfo"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/imagebutton_selector"
+                android:scaleType="fitCenter"
+                android:src="@drawable/home_app_setting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/netinformation_settings"
+                android:textColor="#ffe1e1e1"
+                android:textSize="25sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/framelayout_nettest"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <ImageButton
+                android:id="@+id/net_test"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/imagebutton_selector"
+                android:scaleType="fitCenter"
+                android:src="@drawable/home_route_setting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/net_diagnosis"
+                android:textColor="#ffe1e1e1"
+                android:textSize="25sp" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <!--android:layout_marginLeft="200dp"-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/framelayout_mediaplay"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_margin="10dp">
+
+            <ImageButton
+                android:id="@+id/mediaplay"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/imagebutton_selector"
+                android:scaleType="fitCenter"
+                android:src="@drawable/home_media_play" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/local_mediaplay"
+                android:textColor="#ffe1e1e1"
+                android:textSize="25sp" />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/framelayout_display"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <ImageButton
+                android:id="@+id/display"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/imagebutton_selector"
+                android:scaleType="fitCenter"
+                android:src="@drawable/home_display_setting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/display_settings"
+                android:textColor="#ffe1e1e1"
+                android:textSize="25sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/framelayout_itv"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <ImageButton
+                android:id="@+id/itv"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/imagebutton_selector"
+                android:scaleType="fitCenter"
+                android:src="@drawable/home_itv_setting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/itv_settings"
+                android:textColor="#ffe1e1e1"
+                android:textSize="25sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/framelayout_other"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <ImageButton
+                android:id="@+id/other"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/imagebutton_selector"
+                android:scaleType="fitCenter"
+                android:src="@drawable/home_other_setting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/advance_settings"
+                android:textColor="#ffe1e1e1"
+                android:textSize="25sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/framelayout_systeminfo"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <ImageButton
+                android:id="@+id/systeminfo"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/imagebutton_selector"
+                android:scaleType="fitCenter"
+                android:src="@drawable/home_system_info" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/deviceinfo_settings"
+                android:textColor="#ffe1e1e1"
+                android:textSize="25sp" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

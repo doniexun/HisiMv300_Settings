@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/display_logo"
+        android:contentDescription="@string/action_settings" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="65dp"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/sound_hdmi"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:background="@drawable/display_box_background"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <RadioButton
+                android:id="@+id/auto_HDMI"
+                android:layout_width="600dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_selector"
+                android:button="@null"
+                android:drawableRight="@drawable/display_selector"
+                android:nextFocusLeft="@+id/sound_set"
+                android:nextFocusRight="@+id/media_set"
+                android:nextFocusUp="@+id/sound_set"
+                android:text="@string/auto_HDMI"
+                android:textColor="#ffe1e1e1"
+                android:textSize="21sp" />
+
+            <RadioButton
+                android:id="@+id/HDMI"
+                android:layout_width="600dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_selector"
+                android:button="@null"
+                android:drawableRight="@drawable/display_selector"
+                android:nextFocusLeft="@+id/sound_set"
+                android:nextFocusRight="@+id/media_set"
+                android:nextFocusUp="@+id/auto_HDMI"
+                android:text="@string/sound_HDMI"
+                android:textColor="#ffe1e1e1"
+                android:textSize="21sp" />
+
+            <RadioButton
+                android:id="@+id/no_hdmi"
+                android:layout_width="600dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_selector"
+                android:button="@null"
+                android:drawableRight="@drawable/display_selector"
+                android:nextFocusLeft="@+id/sound_set"
+                android:nextFocusRight="@+id/media_set"
+                android:text="@string/sound_noHDMI"
+                android:textColor="#ffe1e1e1"
+                android:textSize="21sp" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/sound_spdif"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/display_box_background"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <RadioButton
+                android:id="@+id/SPDIF"
+                android:layout_width="600dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_selector"
+                android:button="@null"
+                android:drawableRight="@drawable/display_selector"
+                android:nextFocusLeft="@+id/sound_set"
+                android:nextFocusRight="@+id/media_set"
+                android:text="@string/sound_SPDIF"
+                android:textColor="#ffe1e1e1"
+                android:textSize="21sp" />
+
+            <RadioButton
+                android:id="@+id/no_spdif"
+                android:layout_width="600dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_selector"
+                android:button="@null"
+                android:drawableRight="@drawable/display_selector"
+                android:nextFocusLeft="@+id/sound_set"
+                android:nextFocusRight="@+id/media_set"
+                android:text="@string/sound_noSPDIF"
+                android:textColor="#ffe1e1e1"
+                android:textSize="21sp" />
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

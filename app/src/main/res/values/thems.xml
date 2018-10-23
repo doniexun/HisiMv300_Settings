@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <style name="Theme" parent="android:Theme.Light">
+        <item name="android:windowAnimationStyle">@style/NoAnimation</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+	</style>
+
+
+    <!--复古风格-->
+    <style name="Theme.Retro">
+        <item name="android:windowBackground">@drawable/background_retro</item>
+        <item name="android:windowAnimationStyle">@style/NoAnimation</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="title_button">@style/title_button_default</item>
+	</style>
+
+    <!--炫彩风格-->
+    <style name="Theme_Cool" parent="AppBaseTheme">
+        <item name="android:windowBackground">@drawable/background_blue</item>
+        <item name="android:windowAnimationStyle">@style/NoAnimation</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="title_button">@style/title_button_default</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--待机时间-->
+    <string-array name="timeoutstyle">
+        <item>1 hour</item>
+        <item>2 hour</item>
+        <item>4 hour</item>
+        <item>off</item>
+    </string-array>
+
+    <string-array name="menulanguage">
+        <item>简体中文</item>
+        <item>English</item>
+    </string-array>
+    
+    <string-array name="menustyle">
+        <item>Colorful style</item>
+        <item>Classical style</item>
+    </string-array>
+</resources>
