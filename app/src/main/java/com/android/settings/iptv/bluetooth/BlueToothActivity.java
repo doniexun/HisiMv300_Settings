@@ -201,7 +201,7 @@ public class BlueToothActivity extends BaseActivity implements View.OnClickListe
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     //启用蓝牙
-                    Log.e(TAG, "33 打开蓝牙！");
+                    Log.e(TAG, "33 打开蓝牙!");
                     btManager.clickBlt(BlueToothActivity.this, BltContant.BLUE_TOOTH_OPEN);
                 } else {
                     //禁用蓝牙
@@ -214,7 +214,6 @@ public class BlueToothActivity extends BaseActivity implements View.OnClickListe
             }
         });
     }
-
 
     /**
      * 可用设备的点击事件

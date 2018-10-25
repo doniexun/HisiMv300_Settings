@@ -34,9 +34,9 @@ import com.android.settings.iptv.util.Loger;
 public class Settings extends BaseActivity implements View.OnClickListener, View.OnFocusChangeListener {
     private Context mContext;
     private FrameLayout layout_lan, layout_wifi, layout_netinfo, layout_nettest;
-    private FrameLayout layout_display,layout_info, layout_itv, layout_media, layout_other;
+    private FrameLayout layout_display, layout_info, layout_itv, layout_media, layout_other;
     private ImageButton bt_lan, bt_wifi, bt_netinfo, bt_nettest;
-    private ImageButton bt_display,bt_info, bt_itv, bt_media, bt_other;
+    private ImageButton bt_display, bt_info, bt_itv, bt_media, bt_other;
     private static final int INIT_VIEW = 10001;
     private static final int INIT_WIFI = 10002;
     private static final String DISPLAY_ACTION = "android.intent.action.Settings.Display";
@@ -186,28 +186,28 @@ public class Settings extends BaseActivity implements View.OnClickListener, View
                 layout = layout_display;
                 break;
             case R.id.net_test:
-               layout = layout_nettest;
+                layout = layout_nettest;
                 break;
             case R.id.systeminfo:
-                layout=layout_info;
+                layout = layout_info;
                 break;
             case R.id.itv:
-                layout=layout_itv;
+                layout = layout_itv;
                 break;
             case R.id.mediaplay:
-                layout=layout_media;
+                layout = layout_media;
                 break;
             case R.id.other:
-                layout=layout_other;
+                layout = layout_other;
                 break;
             default:
                 layout = layout_lan;
                 break;
         }
 
-        if(hasFocus){
+        if (hasFocus) {
             setViewZoomIn(layout);
-        }else{
+        } else {
             setViewZoomOut(layout);
         }
     }
@@ -240,6 +240,7 @@ public class Settings extends BaseActivity implements View.OnClickListener, View
         v.clearAnimation();
         v.startAnimation(animationSet);
     }
+
     /**
      * 系统第一次开机
      * 默认wifi是没有打开过的
@@ -248,15 +249,15 @@ public class Settings extends BaseActivity implements View.OnClickListener, View
      * 再关闭wifi的操作
      */
     private void initWifi() {
-        try{
-        WifiManager wifiManager = (WifiManager) mContext.getSystemService(Context.WIFI_SERVICE);
-        WifiInfo info = wifiManager.getConnectionInfo();
-        String wifimac = info.getMacAddress();
-        if (TextUtils.isEmpty(wifimac)) {
-            wifiManager.setWifiEnabled(true);
-            wifiManager.setWifiEnabled(false);
-        }
-        }catch (Exception e){
+        try {
+            WifiManager wifiManager = (WifiManager) mContext.getSystemService(Context.WIFI_SERVICE);
+            WifiInfo info = wifiManager.getConnectionInfo();
+            String wifimac = info.getMacAddress();
+            if (TextUtils.isEmpty(wifimac)) {
+                wifiManager.setWifiEnabled(true);
+                wifiManager.setWifiEnabled(false);
+            }
+        } catch (Exception e) {
             loger.e(e.toString());
         }
     }

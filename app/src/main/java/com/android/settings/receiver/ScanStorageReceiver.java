@@ -35,12 +35,12 @@ public class ScanStorageReceiver extends BroadcastReceiver {
         String action = intent.getAction();
 
         bootstatus = SystemProperties.get("sys.boot_completed");
-        loger.i( "sys.boot_completed -------> " + bootstatus);
+        loger.i("sys.boot_completed -------> " + bootstatus);
 
         if (action.equals("com.changhong.iptv.usbUpdateSystem")) {
 
             mPath = intent.getStringExtra("updatePath");
-            loger.i( "updatePath -----> " + mPath);
+            loger.i("updatePath -----> " + mPath);
             new Thread() {
                 @Override
                 public void run() {
@@ -55,35 +55,31 @@ public class ScanStorageReceiver extends BroadcastReceiver {
                 }
             }.start();
         } else if (action.equals(Intent.ACTION_MEDIA_MOUNTED)) {
-
             Path = intent.getData().getPath();
-            loger.i( "Path -------> " + Path);
-
+            loger.i("Path -------> " + Path);
             //针对海思平台，修改bug：恢复出厂后第一次开机时，会挂载内部存储，导致显示U盘挂载
             //添加过滤条件，两个USB插口分别对应sda和sdb
-            if (bootstatus.equals("1")&&(Path.contains("sda")||Path.contains("sdb"))) {
+            if (bootstatus.equals("1") && (Path.contains("sda") || Path.contains("sdb"))) {
                 toastDialog.setMessage(R.string.udiskmounted);
                 toastDialog.show();
             }
 
             flagfile = new File(Path + "/ch_usbupdate.xml");
 
-            loger.i( "flagfile------->" + flagfile.exists());
+            loger.i("flagfile------->" + flagfile.exists());
             if (flagfile.exists()) {
 
                 new Thread() {
                     @Override
                     public void run() {
                         while (true) {
-
                             try {
                                 Thread.sleep(500);
                             } catch (InterruptedException e) {
                                 e.printStackTrace();
                             }
-
                             bootstatus = SystemProperties.get("sys.boot_completed");
-                            loger.i( "sys.boot_completed:" + bootstatus);
+                            loger.i("sys.boot_completed:" + bootstatus);
                             if (bootstatus.equals("1")) {
                                 try {
                                     Thread.sleep(500);
