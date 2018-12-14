@@ -30,7 +30,7 @@ import java.util.regex.Pattern;
 
 /**
  * @author libeibei
- *         Created by Administrator on 2018/2/1 0001.
+ * Created by Administrator on 2018/2/1 0001.
  */
 @SuppressLint("ValidFragment")
 public class NetPingFragment extends Fragment implements View.OnClickListener {
@@ -39,7 +39,7 @@ public class NetPingFragment extends Fragment implements View.OnClickListener {
     private static final int SHOW_LINE = 10003;
     private static final int PING_STOPED = 10004;
     private static final int SHOW_RESULT = 10005;
-    private static final int Host_Unreachable =10006;
+    private static final int Host_Unreachable = 10006;
     private Context context;
     private View root;
     private EditText et_address;
@@ -58,6 +58,7 @@ public class NetPingFragment extends Fragment implements View.OnClickListener {
     public NetPingFragment(Context context) {
         this.context = context;
     }
+
     @SuppressLint("HandlerLeak")
     private Handler handler = new Handler() {
         @Override
@@ -153,7 +154,7 @@ public class NetPingFragment extends Fragment implements View.OnClickListener {
     private void startPing() {
         isRunning = true;
         String ping_address = et_address.getText().toString();
-        if(!NetTracePingHelper.isNetWorkConnected(context)){
+        if (!NetTracePingHelper.isNetWorkConnected(context)) {
             dialog.setMessage("无网络，请连接网络后再进行测试");
             dialog.show();
             isRunning = false;
@@ -173,18 +174,18 @@ public class NetPingFragment extends Fragment implements View.OnClickListener {
         if (address == null || "".equals(address)) {
             loger.i("输入的网址为空");
             return false;
-        }else if(isURL(address)){
+        } else if (isURL(address)) {
             loger.i("输入的网址是网址");
             return true;
-        }else if(!ipCheck(address)){
+        } else if (!ipCheck(address)) {
             loger.i("ping 输入的ip地址是不合法的");
             return false;
-        }else if(isIP(address)){
+        } else if (isIP(address)) {
             loger.i("输入的网址是IP");
             return true;
-        }else{
+        } else {
             loger.i("输入的网址是不合法的");
-            return  false;
+            return false;
         }
     }
     /*
@@ -201,30 +202,34 @@ public class NetPingFragment extends Fragment implements View.OnClickListener {
         }
     }
     */
+
     /**
      * 验证传入的字符串是否网址
+     *
      * @param str
      * @return
      */
-    private boolean isURL(String str){
+    private boolean isURL(String str) {
         String regex = "([\\w-]+\\.)+[\\w-]+(/[\\w- ./?%&=]*)?";
-        return match(regex,str);
+        return match(regex, str);
     }
+
     /**
      * 验证传入的字符串是否符合IP地址
+     *
      * @param str
      * @return
      */
-    private boolean isIP(String str){
+    private boolean isIP(String str) {
         String num = "(25[0-5]|2[0-4]\\d|[0-1]\\d{2}|[1-9]?\\d)";
         String regex = "^" + num + "\\." + num + "\\." + num + "\\." + num + "$";
-        return match(regex,str);
+        return match(regex, str);
     }
 
     /**
      * 判断IP地址的合法性，这里采用了正则表达式的方法来判断
      * return true，合法
-     * */
+     */
     public boolean ipCheck(String text) {
         if (text != null && !text.isEmpty()) {
             // 定义正则表达式
@@ -247,12 +252,13 @@ public class NetPingFragment extends Fragment implements View.OnClickListener {
     /**
      * 工具函数：
      * 验证传入的字符串是否符合传入的正则表达式
-     * @author libeibei
+     *
      * @param regex
      * @param str
      * @return
+     * @author libeibei
      */
-    private boolean match(String regex,String str){
+    private boolean match(String regex, String str) {
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(str);
         return matcher.matches();
@@ -299,9 +305,9 @@ public class NetPingFragment extends Fragment implements View.OnClickListener {
         }
 
         public void onStopPing(int result, List result_message) {
-            if(! result_message.isEmpty()){
+            if (!result_message.isEmpty()) {
                 lineList = result_message;
-                loger.e( "lineList.size() = " + lineList.size());
+                loger.e("lineList.size() = " + lineList.size());
                 handler.sendEmptyMessage(PING_STOPED);
                 handler.sendEmptyMessage(SHOW_RESULT);
             }
@@ -320,7 +326,7 @@ public class NetPingFragment extends Fragment implements View.OnClickListener {
     private void showResult() {
         initButtonText();
         String lastLine = lineList.get(lineList.size() - 1);
-        if(!TextUtils.isEmpty(lastLine) && lastLine.contains("pipe")){
+        if (!TextUtils.isEmpty(lastLine) && lastLine.contains("pipe")) {
             //无法访问目标主机
             handler.sendEmptyMessage(Host_Unreachable);
             return;
@@ -333,13 +339,13 @@ public class NetPingFragment extends Fragment implements View.OnClickListener {
         //网络连通性
         String Networkconnectivity = getConn(packetLossRate);
         //获取ping值 区分ping的通与ping不通
-        loger.e( "packetLossRate = " + packetLossRate + ", Networkconnectivity = " + Networkconnectivity);
+        loger.e("packetLossRate = " + packetLossRate + ", Networkconnectivity = " + Networkconnectivity);
 
-        if(lineList.size() > 5){
+        if (lineList.size() > 5) {
             float ping = getPing(lineList);
             ping_result.setText("测试完成: 丢包率 = " + packetLossRate + "% , 平均Ping值 = " + ping
                     + " ms, 网络连通性: " + Networkconnectivity);
-        }else {
+        } else {
             ping_result.setText("测试完成: 丢包率 = " + packetLossRate + "% ," + "网络连通性: " + Networkconnectivity);
         }
 
@@ -352,9 +358,9 @@ public class NetPingFragment extends Fragment implements View.OnClickListener {
      */
     private String getRate(String line) {
         String[] a = line.split(",");
-        Log.e("LBB","获取丢包率Line = "+line);
+        Log.e("LBB", "获取丢包率Line = " + line);
         //char rate = a[2].charAt(1);
-        String rate = a[2].substring(1,a[2].indexOf("%"));
+        String rate = a[2].substring(1, a[2].indexOf("%"));
         return rate;
     }
 

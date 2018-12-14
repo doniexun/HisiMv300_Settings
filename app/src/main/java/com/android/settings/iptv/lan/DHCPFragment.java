@@ -84,7 +84,6 @@ public class DHCPFragment extends Fragment {
     }
 
     private void initView() {
-
         mEthernetManager = (EthernetManager) mContext.getSystemService(Context.ETHERNET_SERVICE);
         mIPType = (RadioGroup) root.findViewById(R.id.nativeiptype);
         mNativeIPv4 = (RadioButton) root.findViewById(R.id.nativeipv4);
@@ -158,7 +157,7 @@ public class DHCPFragment extends Fragment {
     private void getEthNetInfo(int state) {
         switch (state) {
             case EthernetManager.EVENT_DHCP_CONNECT_SUCCESSED:
-                if (isAdded()&&mEthernetManager.getDhcpOption60State() !=EthernetManager.OPTION60_STATE_ENABLED) {
+                if (isAdded() && mEthernetManager.getDhcpOption60State() != EthernetManager.OPTION60_STATE_ENABLED) {
                     Log.i(TAG, "getEthNetInfo: the DHCP is connect");
                     toastDialog.setMessage(R.string.DHCPsuccess);
                     toastDialog.setDuration(1);

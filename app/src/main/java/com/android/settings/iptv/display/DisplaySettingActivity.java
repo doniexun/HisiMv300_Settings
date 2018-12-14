@@ -19,12 +19,11 @@ import android.content.Context;
  */
 public class DisplaySettingActivity extends BaseActivity {
     private Context mContext;
-
     FragmentManager mFragmentManager;
     SoundFragment mDisplay_Sound;
     MediaSetFragment mDisplay_MediaListSet;
     OffSetFragment mDisplay_OffSet;
-    private Button mSoundSet, mMediaSet, mDisplay_Off_Set,mMediaListSet;
+    private Button mSoundSet, mMediaSet, mDisplay_Off_Set, mMediaListSet;
     private static boolean isActive = false;
     public static boolean isAreaSetting = false;
     Loger loger = new Loger(DisplaySettingActivity.class);
@@ -68,14 +67,13 @@ public class DisplaySettingActivity extends BaseActivity {
                             mDisplay_Sound = new SoundFragment(mContext);
                         }
                         transaction.replace(R.id.display_frameLayout, mDisplay_Sound);
-                    }  else if (mDisplay_Off_Set.equals(tmp) && hasFocus) {
+                    } else if (mDisplay_Off_Set.equals(tmp) && hasFocus) {
                         if (mDisplay_OffSet == null) {
                             mDisplay_OffSet = new OffSetFragment();
                         }
                         transaction.replace(R.id.display_frameLayout, mDisplay_OffSet);
-
-                    } else if(mMediaListSet.equals(tmp) && hasFocus){
-                        if(mDisplay_MediaListSet == null){
+                    } else if (mMediaListSet.equals(tmp) && hasFocus) {
+                        if (mDisplay_MediaListSet == null) {
                             mDisplay_MediaListSet = new MediaSetFragment(mContext);
                         }
                         transaction.replace(R.id.display_frameLayout, mDisplay_MediaListSet);

@@ -32,32 +32,32 @@ import com.android.settings.BaseActivity;
  * Created by libeibei on 2017/12/19 0019.
  */
 
-public class NetDiagnosisActivity extends BaseActivity implements View.OnClickListener{
+public class NetDiagnosisActivity extends BaseActivity implements View.OnClickListener {
 
     private static final String TAG = "NetDiagnosis";
-    private  static CallBack callBack;
-    private ImageView imageView_connectivity,imageView_ip,
-            imageView_gateway,imageView_http,imageView_ntp,imageView_multicast,imageView_dns;
-    private TextView diagnosis_result,net_connect,net_ip,net_gateway,net_http,net_ntp,net_multicast,net_dns;
+    private static CallBack callBack;
+    private ImageView imageView_connectivity, imageView_ip,
+            imageView_gateway, imageView_http, imageView_ntp, imageView_multicast, imageView_dns;
+    private TextView diagnosis_result, net_connect, net_ip, net_gateway, net_http, net_ntp, net_multicast, net_dns;
     private Button startButton;
     private RadarView Radar;
-    private final static int START_TEST = 1 ;
-    private final static int START_IP_TEST = 2 ;
-    private final static int START_GATEWAY_TEST = 3 ;
-    private final static int START_HTTP_TEST = 4 ;
-    private final static int START_NTP_TEST = 5 ;
-    private final static int START_MULTICAST_TEST = 6 ;
-    private final static int START_DNS_TEST = 7 ;
+    private final static int START_TEST = 1;
+    private final static int START_IP_TEST = 2;
+    private final static int START_GATEWAY_TEST = 3;
+    private final static int START_HTTP_TEST = 4;
+    private final static int START_NTP_TEST = 5;
+    private final static int START_MULTICAST_TEST = 6;
+    private final static int START_DNS_TEST = 7;
     private static boolean isRunning = false;
-    private VchCommonToastDialog toastDialog =null;
+    private VchCommonToastDialog toastDialog = null;
     @SuppressLint("HandlerLeak")
-    public Handler handler = new Handler(){
+    public Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
-            switch (msg.what){
+            switch (msg.what) {
                 case START_TEST:
-                    if(!isRunning){
+                    if (!isRunning) {
                         initUI();
                         startConnectTest();
                         diagnosis_result.setText("正在诊断...");
@@ -68,37 +68,37 @@ public class NetDiagnosisActivity extends BaseActivity implements View.OnClickLi
                     }
                     break;
                 case START_IP_TEST:
-                    if(isRunning){
+                    if (isRunning) {
                         startIpTest();
                         Radar.addPoint();
                     }
                     break;
                 case START_GATEWAY_TEST:
-                    if(isRunning) {
+                    if (isRunning) {
                         startGateWayTest();
                         Radar.addPoint();
                     }
                     break;
                 case START_HTTP_TEST:
-                    if(isRunning) {
+                    if (isRunning) {
                         startHttpTest();
                         Radar.addPoint();
                     }
                     break;
                 case START_NTP_TEST:
-                    if(isRunning) {
+                    if (isRunning) {
                         startNtpTest();
                         Radar.addPoint();
                     }
                     break;
                 case START_MULTICAST_TEST:
-                    if(isRunning) {
+                    if (isRunning) {
                         startMultiCastTest();
                         Radar.addPoint();
                     }
                     break;
                 case START_DNS_TEST:
-                    if(isRunning) {
+                    if (isRunning) {
                         startDnsTest();
                         Radar.addPoint();
                     }
@@ -117,9 +117,9 @@ public class NetDiagnosisActivity extends BaseActivity implements View.OnClickLi
         setContentView(R.layout.nettest_diagnosis);
         init();
     }
-    private void init(){
-        callBack =new CallBack(NetDiagnosisActivity.this);
 
+    private void init() {
+        callBack = new CallBack(NetDiagnosisActivity.this);
         toastDialog = new VchCommonToastDialog(this);
         toastDialog.info_layout.setBackgroundResource(R.drawable.epg_prompt_bg);
         toastDialog.getWindow().setType(2003);
@@ -131,7 +131,7 @@ public class NetDiagnosisActivity extends BaseActivity implements View.OnClickLi
         net_http = (TextView) findViewById(R.id.textView_http);
         net_ntp = (TextView) findViewById(R.id.textView_ntp);
         net_multicast = (TextView) findViewById(R.id.textView_multicast);
-        net_dns =(TextView) findViewById(R.id.textView_dns);
+        net_dns = (TextView) findViewById(R.id.textView_dns);
 
         imageView_connectivity = (ImageView) findViewById(R.id.imageview_connectivity);
         imageView_ip = (ImageView) findViewById(R.id.imageview_ip);
@@ -151,7 +151,7 @@ public class NetDiagnosisActivity extends BaseActivity implements View.OnClickLi
      * 初始化测试结果
      * 将上次的测试结果清空
      */
-    private void initUI(){
+    private void initUI() {
         imageView_connectivity.setImageResource(0);
         imageView_ip.setImageResource(0);
         imageView_gateway.setImageResource(0);
@@ -164,7 +164,7 @@ public class NetDiagnosisActivity extends BaseActivity implements View.OnClickLi
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        switch (keyCode){
+        switch (keyCode) {
             case KeyEvent.KEYCODE_BACK:
                 diagnosis_result.setText("正在终止诊断...");
                 stopAllService();
@@ -179,32 +179,38 @@ public class NetDiagnosisActivity extends BaseActivity implements View.OnClickLi
 
     @Override
     public void onClick(View view) {
-        if(view.getId() == R.id.diagnosis_start){
-            if(isRunning){
+        if (view.getId() == R.id.diagnosis_start) {
+            if (isRunning) {
                 toastDialog.setMessage(R.string.network_diagnosis_yet);
                 toastDialog.setDuration(1);
                 toastDialog.show();
-            }else{
+            } else {
                 handler.sendEmptyMessage(START_TEST);
             }
         }
     }
 
-    private void stopAllService(){
-        Log.i(TAG,"stopAllService().....");
-        if(NetConnectService.isRunning){
+    private void stopAllService() {
+        Log.i(TAG, "stopAllService().....");
+        if (NetConnectService.isRunning) {
             stopConnectTest();
-        }if(NetIpService.isRunning){
+        }
+        if (NetIpService.isRunning) {
             stopIpTest();
-        }if(NetGatewayService.isRunning){
+        }
+        if (NetGatewayService.isRunning) {
             stopGateWayTest();
-        }if(NetHttpService.isRunning){
+        }
+        if (NetHttpService.isRunning) {
             stopHttpTest();
-        }if(NetNtpService.isRunning){
+        }
+        if (NetNtpService.isRunning) {
             stopNtpTest();
-        }if(NetMulticastService.isRunning){
+        }
+        if (NetMulticastService.isRunning) {
             stopMultiCastTest();
-        }if(NetDnsService.isRunning){
+        }
+        if (NetDnsService.isRunning) {
             stopDnsTest();
         }
     }
@@ -214,74 +220,87 @@ public class NetDiagnosisActivity extends BaseActivity implements View.OnClickLi
         super.onResume();
     }
 
-    private void startConnectTest(){
+    private void startConnectTest() {
         Intent intent = new Intent();
         intent.setAction("com.android.settings.service.NetConnectService");
         startService(intent);
     }
-    private void stopConnectTest(){
+
+    private void stopConnectTest() {
         Intent intent = new Intent();
         intent.setAction("com.android.settings.service.NetConnectService");
         stopService(intent);
     }
-    private void startIpTest(){
+
+    private void startIpTest() {
         Intent intent = new Intent();
         intent.setAction("com.android.settings.service.NetIpService");
         startService(intent);
     }
-    private void stopIpTest(){
+
+    private void stopIpTest() {
         Intent intent = new Intent();
         intent.setAction("com.android.settings.service.NetIpService");
         stopService(intent);
     }
-    private void startGateWayTest(){
+
+    private void startGateWayTest() {
         Intent intent = new Intent();
         intent.setAction("com.android.settings.service.NetGatewayService");
         startService(intent);
 
     }
-    private void stopGateWayTest(){
+
+    private void stopGateWayTest() {
         Intent intent = new Intent();
         intent.setAction("com.android.settings.service.NetGatewayService");
         stopService(intent);
 
     }
-    private void startHttpTest(){
+
+    private void startHttpTest() {
         Intent intent = new Intent();
         intent.setAction("com.android.settings.service.NetHttpService");
         startService(intent);
     }
-    private void stopHttpTest(){
+
+    private void stopHttpTest() {
         Intent intent = new Intent();
         intent.setAction("com.android.settings.service.NetHttpService");
         stopService(intent);
     }
-    private void startNtpTest(){
+
+    private void startNtpTest() {
         Intent intent = new Intent();
         intent.setAction("com.android.settings.service.NetNtpService");
         startService(intent);
     }
-    private void stopNtpTest(){
+
+    private void stopNtpTest() {
         Intent intent = new Intent();
         intent.setAction("com.android.settings.service.NetNtpService");
         stopService(intent);
     }
-    private void startMultiCastTest(){
+
+    private void startMultiCastTest() {
         Intent intent = new Intent();
         intent.setAction("com.android.settings.service.NetMulticastService");
         startService(intent);
     }
-    private void stopMultiCastTest(){
+
+    private void stopMultiCastTest() {
         Intent intent = new Intent();
         intent.setAction("com.android.settings.service.NetMulticastService");
         stopService(intent);
     }
-    private void startDnsTest(){
+
+    private void startDnsTest() {
         Intent intent = new Intent();
         intent.setAction("com.android.settings.service.NetDnsService");
         startService(intent);
     }
-    private void stopDnsTest(){
+
+    private void stopDnsTest() {
         Intent intent = new Intent();
         intent.setAction("com.android.settings.service.NetDnsService");
         stopService(intent);
@@ -297,7 +316,7 @@ public class NetDiagnosisActivity extends BaseActivity implements View.OnClickLi
      * 1.显示测试结果
      * 2.停止动画
      */
-    private void onDiagnosisFinished(boolean isFoceFinish){
+    private void onDiagnosisFinished(boolean isFoceFinish) {
         diagnosis_result.setText("网络诊断完成");
         startButton.setEnabled(true);
         Radar.stopSearching();
@@ -310,27 +329,32 @@ public class NetDiagnosisActivity extends BaseActivity implements View.OnClickLi
      * 一 ：异步任务，通过回调返归测试结果
      * 二：更新界面UI
      * 三：开启下一异步任务
+     *
      * @return
      */
-    public static CallBack getCallBack(){
+    public static CallBack getCallBack() {
         return callBack;
     }
 
-    public class CallBack{
+    public class CallBack {
         public Context mcontext;
-        public CallBack(Context context){mcontext =context;}
+
+        public CallBack(Context context) {
+            mcontext = context;
+        }
 
         /**
          * 回调一
+         *
          * @param connect
          */
-        public void onNetConnectServiceStoped(boolean connect){
+        public void onNetConnectServiceStoped(boolean connect) {
 
-            if(connect){
+            if (connect) {
                 net_connect.setTextColor(Color.WHITE);
                 imageView_connectivity.setImageResource(R.drawable.common_icon_checkbox);
                 handler.sendEmptyMessage(START_IP_TEST);
-            }else{
+            } else {
                 net_connect.setTextColor(Color.WHITE);
                 imageView_connectivity.setImageResource(R.drawable.common_icon_error);
                 onDiagnosisFinished(true);
@@ -338,16 +362,17 @@ public class NetDiagnosisActivity extends BaseActivity implements View.OnClickLi
         }
 
         /**
-         *回调二
+         * 回调二
+         *
          * @param IpAllowed
          */
-        public void onNetIpServiceStoped(boolean IpAllowed){
+        public void onNetIpServiceStoped(boolean IpAllowed) {
 
-            if(IpAllowed){
+            if (IpAllowed) {
                 net_ip.setTextColor(Color.WHITE);
                 imageView_ip.setImageResource(R.drawable.common_icon_checkbox);
                 handler.sendEmptyMessage(START_GATEWAY_TEST);
-            }else{
+            } else {
                 net_ip.setTextColor(Color.WHITE);
                 imageView_ip.setImageResource(R.drawable.common_icon_error);
                 onDiagnosisFinished(true);
@@ -356,14 +381,15 @@ public class NetDiagnosisActivity extends BaseActivity implements View.OnClickLi
 
         /**
          * 回调三
+         *
          * @param result
          */
-        public void onNetGatewayServiceStoped(boolean result){
-            if(result){
+        public void onNetGatewayServiceStoped(boolean result) {
+            if (result) {
                 net_gateway.setTextColor(Color.WHITE);
                 imageView_gateway.setImageResource(R.drawable.common_icon_checkbox);
                 handler.sendEmptyMessage(START_HTTP_TEST);
-            }else{
+            } else {
                 net_gateway.setTextColor(Color.WHITE);
                 imageView_gateway.setImageResource(R.drawable.common_icon_error);
                 onDiagnosisFinished(true);
@@ -371,15 +397,16 @@ public class NetDiagnosisActivity extends BaseActivity implements View.OnClickLi
         }
 
         /**
-         *回调四
+         * 回调四
+         *
          * @param request
          */
-        public void onNetHttpServiceStoped(boolean request){
-            if(request){
+        public void onNetHttpServiceStoped(boolean request) {
+            if (request) {
                 net_http.setTextColor(Color.WHITE);
                 imageView_http.setImageResource(R.drawable.common_icon_checkbox);
                 handler.sendEmptyMessage(START_NTP_TEST);
-            }else{
+            } else {
                 net_http.setTextColor(Color.WHITE);
                 imageView_http.setImageResource(R.drawable.common_icon_error);
                 handler.sendEmptyMessage(START_NTP_TEST);
@@ -387,15 +414,16 @@ public class NetDiagnosisActivity extends BaseActivity implements View.OnClickLi
         }
 
         /**
-         *回调五
+         * 回调五
+         *
          * @param request
          */
-        public void onNetNtpServiceStoped(boolean request){
-            if(request){
+        public void onNetNtpServiceStoped(boolean request) {
+            if (request) {
                 net_ntp.setTextColor(Color.WHITE);
                 imageView_ntp.setImageResource(R.drawable.common_icon_checkbox);
                 handler.sendEmptyMessage(START_MULTICAST_TEST);
-            }else{
+            } else {
                 net_ntp.setTextColor(Color.WHITE);
                 imageView_ntp.setImageResource(R.drawable.common_icon_error);
                 handler.sendEmptyMessage(START_MULTICAST_TEST);
@@ -406,14 +434,15 @@ public class NetDiagnosisActivity extends BaseActivity implements View.OnClickLi
         /**
          * 回调六
          * 组播获取
+         *
          * @param result
          */
-        public void onNetMultiCastStoped(boolean result){
-            if(result){
+        public void onNetMultiCastStoped(boolean result) {
+            if (result) {
                 net_multicast.setTextColor(Color.WHITE);
                 imageView_multicast.setImageResource(R.drawable.common_icon_checkbox);
                 handler.sendEmptyMessage(START_DNS_TEST);
-            }else{
+            } else {
                 net_multicast.setTextColor(Color.WHITE);
                 imageView_multicast.setImageResource(R.drawable.common_icon_error);
                 handler.sendEmptyMessage(START_DNS_TEST);
@@ -421,20 +450,20 @@ public class NetDiagnosisActivity extends BaseActivity implements View.OnClickLi
         }
 
         /**
-         *回调七
+         * 回调七
+         *
          * @param request
          */
-        public void onNetDnsServiceStoped(boolean request){
-            if(request){
+        public void onNetDnsServiceStoped(boolean request) {
+            if (request) {
                 net_dns.setTextColor(Color.WHITE);
                 imageView_dns.setImageResource(R.drawable.common_icon_checkbox);
-            }else{
+            } else {
                 net_dns.setTextColor(Color.WHITE);
                 imageView_dns.setImageResource(R.drawable.common_icon_error);
             }
             onDiagnosisFinished(false);
         }
-
 
 
     }

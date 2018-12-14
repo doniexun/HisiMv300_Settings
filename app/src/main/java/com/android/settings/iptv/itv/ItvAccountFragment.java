@@ -115,7 +115,6 @@ public class ItvAccountFragment extends Fragment {
             auth_url_2 = "http://100.100.0.134:8082/EDS/jsp/AuthenticationURL";
         }
         mSecondAuthAddr.setText(auth_url_2);
-
         mPasswordVisiable = (CheckBox) root.findViewById(R.id.itv_pass_visiable);
         mPasswordVisiable.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 
@@ -141,7 +140,7 @@ public class ItvAccountFragment extends Fragment {
                 Editable editable = ((EditText) v).getText();
                 int index = ((EditText) v).getSelectionStart();
                 if (event.getAction() == KeyEvent.ACTION_DOWN) {
-                    loger.i( "OnKeyListener-----keyCode = " + keyCode);
+                    loger.i("OnKeyListener-----keyCode = " + keyCode);
                     if (keyCode == KeyEvent.KEYCODE_BACK) {
 
                         if (text.isEmpty() || index == 0) {
@@ -152,7 +151,6 @@ public class ItvAccountFragment extends Fragment {
                         }
 
                     } else if (keyCode == KeyEvent.KEYCODE_INFO) {
-
                         ((InputMethodManager) mContext.getSystemService(Context.INPUT_METHOD_SERVICE)).toggleSoftInputFromWindow(v.getWindowToken(), 0, InputMethodManager.HIDE_NOT_ALWAYS);
                         return true;
                     }
